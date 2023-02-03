@@ -4,7 +4,6 @@
   font-weight: 400;
   src: url("/fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
-
 }
 
 @font-face {
@@ -13,7 +12,6 @@
   font-weight: 700;
   src: url("/fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
-
 }
 
 
@@ -32,7 +30,6 @@ body {
   color: inherit;
   text-align: center;
   text-decoration: none;
-
 }
 
 .navigation-item-search {
@@ -77,7 +74,6 @@ body {
   line-height: 26px;
   color: #333333;
   text-align: center;
-
 }
 
 .search-button{
@@ -85,7 +81,6 @@ body {
   line-height: 36px;
   color: #ffffff;
   background-color: #756157;
-
 }
 .advantages-list {
   text-align: center;
@@ -137,7 +132,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-
 }
 
 
@@ -163,6 +157,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+  min-height: 412px;
 }
 
 .subscribe-intro {
@@ -170,7 +165,6 @@ body {
   line-height: 36px;
   color: #ffffff;
   background-color:#D7D7D7;
-
 }
 
 .subscribe-description {
@@ -179,13 +173,12 @@ body {
   line-height: 26px;
   color: #ffffff;
   background-color:#D7D7D7;
-
 }
+
 .subscribe-form {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-
 }
 .subscribe-button {
   font-size: 20px;
@@ -195,6 +188,8 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+
 .footer-social .social-item-vk {
   background-image: url(/images/footer/footer-logo-vk.svg);
   background-repeat: no-repeat;
@@ -203,7 +198,6 @@ body {
 .footer-social .social-item-tg {
   background-image: url(/images/footer/footer-logo-telegram.svg);
   background-repeat: no-repeat;
-
 }
 
 .footer-social .social-item-youtube {
@@ -214,12 +208,13 @@ body {
 .footer-contacts {
   text-align: center;
 }
+
 .footer-contact-phone {
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
-
+  color: inherit;
 }
 
 /* catalog.html */
@@ -238,17 +233,16 @@ body {
   background-image: url(/images/catalog/catalog-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  min-height: 412px;
 }
 
 .breadcrumbs a {
-  font-family: "PT Sans" sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
   background-color: #D7D7D7;
   text-decoration: none;
-
 }
 
 .breadcrumbs-home {
@@ -275,7 +269,7 @@ body {
   line-height: 23px;
   color: #ffffff;
   background-color: #D7D7D7
-  }
+}
 
 .apply-button {
   font-size: 16px;
@@ -295,8 +289,8 @@ body {
   background-color:#000000;
   text-transform: uppercase;
   text-decoration: none;
-
 }
+
 .count-hotels {
   font-weight: 400;
   font-size: 30px;
@@ -309,25 +303,21 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-decoration: none;
-
 }
 
 .show-cards {
   background-image: url(/images/catalog/view-icon-1.svg);
   background-repeat: no-repeat;
-
 }
 
 .show-fullscreen {
   background-image: url(/images/catalog/view-icon-2.svg);
   background-repeat: no-repeat;
-
 }
 
 .show-list {
   background-image: url(/images/catalog/view-icon-3.svg);
   background-repeat: no-repeat;
-
 }
 
 .hotel-card-title {
@@ -335,7 +325,6 @@ body {
 }
 
 .type-of-livivng {
-  font-family: "PT Sans" sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -344,7 +333,6 @@ body {
 }
 
 .price-range {
-  font-family: "PT Sans" sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -359,7 +347,6 @@ body {
   background-color:#756157;
   text-transform: uppercase;
   text-decoration: none;
-
 }
 
 .add-favorites {
@@ -380,14 +367,12 @@ body {
 }
 
 .count-rating {
-  font-family: "PT Sans" sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   background-color:#F2F2F2;
   text-transform: uppercase;
   text-decoration: none;
-
 }
 
 
@@ -398,24 +383,22 @@ body {
   background-color: #82B3D3;
   text-decoration: none;
 }
+
 .pagination-current {
   font-size: 20px;
   line-height: 36px;
   background-color: #F2F2F2;
   text-decoration: none;
-
 }
 
 .inner-subscribe {
   text-align: center;
-
 }
 
 .inner-subscribe-intro {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-
 }
 
 .inner-subscribe-description {
@@ -423,7 +406,6 @@ body {
   line-height: 26px;
   color: #333333;
   text-align: center;
-
 }
 
 .inner-subscribe-button {
