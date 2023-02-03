@@ -25,11 +25,6 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
-.page-header {
-  color: #000000;
-  background-color:#ffffff;
-
-}
 
 .navigatoin-link {
   font-size: 20px;
@@ -177,7 +172,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   color: #ffffff;
-  background-color: #000000;
+  background-color:#D7D7D7;
 
 }
 
@@ -186,7 +181,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
-  background-color: #000000;
+  background-color:#D7D7D7;
 
 }
 .subscribe-form {
@@ -237,7 +232,7 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #D7D7D7;
   text-decoration: none;
   text-align: left;
 }
@@ -255,7 +250,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #D7D7D7;
   text-decoration: none;
 
 }
@@ -274,7 +269,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #D7D7D7;
   text-decoration: none;
 }
 
@@ -283,9 +278,8 @@ body {
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
-  background-color: #000000;
-  text-decoration: none;
-}
+  background-color: #D7D7D7
+  }
 
 .apply-button {
   font-size: 16px;
@@ -419,7 +413,6 @@ body {
 }
 
 .inner-subscribe-intro {
-  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -427,7 +420,6 @@ body {
 }
 
 .inner-subscribe-description {
-  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
