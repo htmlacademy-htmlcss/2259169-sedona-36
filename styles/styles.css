@@ -29,6 +29,7 @@ body {
 .navigatoin-link {
   font-size: 20px;
   line-height: 24px;
+  color: inherit;
   text-align: center;
   text-decoration: none;
 
@@ -184,7 +185,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  background-color: #F2F2F2;
 
 }
 .subscribe-button {
@@ -240,7 +240,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.breadcrumbs a{
+.breadcrumbs a {
   font-family: "PT Sans" sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -371,9 +371,12 @@ body {
   text-decoration: none;
 }
 
-/* В этом месте не вставляется звезда рейтинга */
-.rating-star {
+
+.hotel-rating-star {
   background-image: url(/images/catalog/rating-star.svg);
+  background-repeat: repeat-x;
+  min-height: 18px;
+  width: 53px;
 }
 
 .count-rating {
