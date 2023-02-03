@@ -51,18 +51,14 @@ body {
   text-decoration: none;
 
 }
-.main-index {
-  background-image: url(/images/welcome/welcome-background.jpg);
+.welcome-sedona {
+  background-image: url(/images/welcome/welcome-bottom-saw.svg), url(/images/welcome/welcome-background.jpg);
   background-size: 100% auto;
+  background-position: bottom center, center;
   background-repeat: no-repeat;
+  min-height: 485px;
 }
 
-.index-bottom-stairs {
-  background-image: url(/images/welcome/welcome-bottom-saw.svg);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-
-}
 
 .intro {
   text-align: center;
