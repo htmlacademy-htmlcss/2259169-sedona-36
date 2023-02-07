@@ -25,18 +25,13 @@ body {
   margin: 0;
 }
 
-.main-index {
-  margin: 0 auto;
-  width: 1200px;
-  background-color: #ffffff;
-
-}
-
-.page-header {
+.container {
   margin: 0 auto;
   width: 1200px;
   background-color: #ffffff;
 }
+
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -211,11 +206,6 @@ body {
   text-decoration: none;
 }
 
-.page-footer {
-  margin: 0 auto;
-  width: 1200px;
-  background-color: #ffffff;
-}
 
 .footer-social .social-item-vk {
   background-image: url(/images/footer/footer-logo-vk.svg);
@@ -255,14 +245,11 @@ body {
 }
 
 
-.main-inner {
+.filter-hotels {
   background-image: url(/images/catalog/catalog-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   min-height: 412px;
-  margin: 0 auto;
-  width: 1200px;
-  background-color: #ffffff;
 }
 
 .breadcrumbs a {
