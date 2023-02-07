@@ -36,9 +36,14 @@ body {
   overflow: hidden;
 }
 
+.navigation-list{
+  list-style: none;
+}
+
 .navigatoin-link {
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
   color: inherit;
   text-align: center;
   text-decoration: none;
@@ -56,6 +61,7 @@ body {
 .navigation-item-button {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
   color: #ffffff;
   background-color: #756157;
   text-decoration: none;
@@ -93,17 +99,19 @@ body {
   line-height: 36px;
   color: #ffffff;
   background-color: #756157;
+  text-transform: uppercase;
 }
 .advantages-list {
   text-align: center;
 }
 
-.advantages-title {
+.advantages-title,
+.services-title {
   text-transform: uppercase;
-
 }
 
-.advantages-description {
+.advantages-description,
+.services-description {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -133,19 +141,7 @@ body {
 
 .services {
   text-align: center;
-
 }
-
-.services-title {
-  text-transform: uppercase;
-}
-
-.services-description {
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-}
-
 
 .service-1 {
   background-image: url(/images/advantages/advantages-house.svg);
@@ -193,6 +189,7 @@ body {
 .subscribe-button {
   font-size: 20px;
   line-height: 36px;
+  font-weight: 700;
   color: #ffffff;
   background-color:#82B3D3;
   text-transform: uppercase;
@@ -281,6 +278,7 @@ body {
 .apply-button {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
   text-align: center;
   color: #ffffff;
   background-color:#82B3D3;
@@ -291,6 +289,7 @@ body {
 .cancel-button {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
   text-align: center;
   color: #ffffff;
   background-color:#000000;
@@ -329,13 +328,7 @@ body {
   text-decoration: none;
 }
 
-.type-of-livivng {
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-  text-decoration: none;
-}
-
+.type-of-livivng,
 .price-range {
   font-size: 18px;
   line-height: 21px;
