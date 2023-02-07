@@ -14,18 +14,30 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
   background-color: #F2F2F2;
-  margin: 0;
+
+
 }
 
-.container {
+.main-container{
+  flex-grow: 1;
+}
+
+.page-container {
   margin: 0 auto;
   width: 1200px;
   background-color: #ffffff;
@@ -247,7 +259,7 @@ body {
 
 .filter-hotels {
   background-image: url(/images/catalog/catalog-background.jpg);
-  background-size: 100% auto;
+  background-size: 100% cover;
   background-repeat: no-repeat;
   min-height: 412px;
 }
