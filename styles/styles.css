@@ -43,6 +43,30 @@ body {
   background-color: #ffffff;
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list{
+  margin: 0;
+  padding: 0;
+  width: 590px;
+
+}
+
+.navigation-user{
+  max-width: 320px;
+  margin-left: auto;
+
+}
+
+.logo{
+  display: block;
+  margin: 0 auto;
+
+}
 
 .visually-hidden {
   position: absolute;
@@ -123,6 +147,8 @@ body {
   text-transform: uppercase;
 }
 .advantages-list {
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
