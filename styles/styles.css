@@ -21,6 +21,20 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  background-color: #F2F2F2;
+  margin: 0;
+}
+
+.main-index {
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #ffffff;
+
+}
+
+.page-header {
+  margin: 0 auto;
+  width: 1200px;
   background-color: #ffffff;
 }
 .visually-hidden {
@@ -197,6 +211,11 @@ body {
   text-decoration: none;
 }
 
+.page-footer {
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #ffffff;
+}
 
 .footer-social .social-item-vk {
   background-image: url(/images/footer/footer-logo-vk.svg);
