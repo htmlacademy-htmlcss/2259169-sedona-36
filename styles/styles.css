@@ -173,6 +173,7 @@ body {
   line-height: 36px;
   color: #ffffff;
   background-color:#D7D7D7;
+  text-transform: uppercase;
 }
 
 .subscribe-description {
@@ -394,6 +395,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .inner-subscribe-description {
