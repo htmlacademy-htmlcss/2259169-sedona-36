@@ -260,6 +260,9 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   min-height: 412px;
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #ffffff;
 }
 
 .breadcrumbs a {
