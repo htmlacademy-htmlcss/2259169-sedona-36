@@ -60,19 +60,14 @@
                       Главная страница
                     </span></a>
                 </li>
-                <li class="breadcrumbs-about">
-                  <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">
-                      О Седоне
-                    </span></a>
-                </li>
                 <li class="breadcrumbs-hotels">
                   <a class="breadcrumbs-link" href="index.html">Гостиницы</a>
                 </li>
               </ul>
             </header>
             <h2 class="visually-hidden">Фильтр гостиниц Седоны</h2>
-            <form class="filter-form filter-infrastructure" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="filter-group">
+            <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="filter-group filter-infrastructure">
                 <legend class="filter-title">Инфраструктура:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
@@ -95,8 +90,8 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="filter-group ">
-                <legend class="filter-title filter-type">Тип жилья:</legend>
+              <fieldset class="filter-group  filter-type">
+                <legend class="filter-title">Тип жилья:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
                     <label class="control">
@@ -123,12 +118,12 @@
                 <div class="filter-title-range">
                   <input type="range" id="price-range" name="price-range" min="0" max="9000">
                   <label for="price-range">Выберите стоимость</label>
+                  <input type="number" name="min-price" placeholder="От">
+                  <input type="number" name="max-price" placeholder="До">
                 </div>
               </fieldset>
               <fieldset class="filter-group price-form">
-                <input type="number" name="min-price" placeholder="От">
                 <button class="apply-button" type="submit">Применить</button>>
-                <input type="number" name="max-price" placeholder="До">
                 <button class="cancel-button" type="reset">Сбросить</button>
               </fieldset>
             </form>
