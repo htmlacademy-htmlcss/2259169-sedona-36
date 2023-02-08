@@ -53,13 +53,14 @@ body {
   margin: 0;
   padding: 0;
   width: 590px;
-
 }
 
 .navigation-user{
   max-width: 320px;
   margin-left: auto;
-
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .logo{
@@ -139,8 +140,6 @@ body {
   text-align: center;
 }
 
-
-
 .advantages-title,
 .services-title {
   text-transform: uppercase;
@@ -157,6 +156,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  list-style: none;
   padding: 0;
   margin: 0;
 
@@ -210,6 +210,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
