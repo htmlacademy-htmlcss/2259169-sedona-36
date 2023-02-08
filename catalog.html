@@ -95,8 +95,6 @@
                   </li>
                 </ul>
               </fieldset>
-            </form>
-            <form class="filter-form filter-type" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="filter-group ">
                 <legend class="filter-title filter-type">Тип жилья:</legend>
                 <ul class="filter-list">
@@ -120,23 +118,16 @@
                   </li>
                 </ul>
               </fieldset>
-            </form>
-            <form class="filter-form filter-price" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="filter-group">
+              <fieldset class="filter-group filter-price">
                 <legend class="filter-title">Стоимость, ₽:</legend>
                 <div class="filter-title-range">
                   <input type="range" id="price-range" name="price-range" min="0" max="9000">
                   <label for="price-range">Выберите стоимость</label>
                 </div>
               </fieldset>
-            </form>
-            <form class="price-form" action="https://echo.htmlacademy.ru/" method="post">
-              <fieldset class="filter-group">
+              <fieldset class="filter-group price-form">
                 <input type="number" name="min-price" placeholder="От">
-                <button class="apply-button" type="submit">Применить</button>
-            </form>
-            <form class="price-form" action="https://echo.htmlacademy.ru/" method="post">
-              <fieldset class="filter-group">
+                <button class="apply-button" type="submit">Применить</button>>
                 <input type="number" name="max-price" placeholder="До">
                 <button class="cancel-button" type="reset">Сбросить</button>
               </fieldset>
