@@ -346,26 +346,31 @@ body {
 
 /* catalog.html */
 
+.inner-header {
+  width: 1060px;
+  min-height: 107px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
+  width: 495px;
+  height: 78;
   color: #ffffff;
   background-color: #D7D7D7;
   text-decoration: none;
   text-align: left;
 }
 
-
-.filter-hotels {
-  background-image: url(/images/catalog/catalog-background.jpg);
-  background-size: 100% cover;
-  background-repeat: no-repeat;
-  min-height: 412px;
-}
-
 .breadcrumbs a {
   font-size: 16px;
   line-height: 21px;
+  width: 73px;
+  height: 21px;
   color: #ffffff;
   background-color: #D7D7D7;
   text-decoration: none;
@@ -380,6 +385,33 @@ body {
   background-image: url(/images/breadscrumbs/breadscrumbs-arrow.svg);
   background-repeat: no-repeat;
 }
+
+.filter-hotels {
+  background-image: url(/images/catalog/catalog-background.jpg);
+  background-size: 100% cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  min-height: 412px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.filter-infrastructure {
+  align-self: flex-start;
+}
+
+.filter-type {
+  align-self: flex-start;
+}
+
+.price-form {
+  align-self: flex-start;
+}
+
 
 .filter-title {
   font-size: 20px;
