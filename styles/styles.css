@@ -146,11 +146,7 @@ body {
   background-color: #756157;
   text-transform: uppercase;
 }
-.advantages-list {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
+
 
 .advantages-title,
 .services-title {
@@ -164,10 +160,28 @@ body {
   color: #333333;
 }
 
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+}
+
+.advantages-item {
+  width: 400px;
+  min-height: 385px;
+}
+
 .advantage-1 {
   color: #ffffff;
   background-color:#82B3D3;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
 }
+
 
 .advantage-2 {
   background-color: #83B3D312;
@@ -184,27 +198,52 @@ body {
 .advantage-5 {
   color: #ffffff;
   background-color: #83B3D3;
+  width: 1200px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.services-intro{
+  min-height: 246px;
+
 }
 
 .services {
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.services-item {
+  width: 400px;
+  min-height: 385px;
 }
 
 .service-1 {
   background-image: url(/images/advantages/advantages-house.svg);
   background-repeat: no-repeat;
   background-color: #83B3D312;
+  order: 1;
 }
 
 .service-2 {
   background-image: url(/images/advantages/advantages-icon-food.svg);
   background-repeat: no-repeat;
+  order: 2;
 }
 
 .service-3 {
   background-image: url(/images/advantages/advantages-icon-gifts.svg);
   background-repeat: no-repeat;
   background-color: #83B3D312;
+  order: 3;
 }
 
 .subscribe {
