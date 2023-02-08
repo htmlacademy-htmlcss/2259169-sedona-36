@@ -33,7 +33,7 @@ body {
 
 }
 
-.main-container{
+.main-container {
   flex-grow: 1;
 }
 
@@ -139,13 +139,6 @@ body {
   text-align: center;
 }
 
-.search-button{
-  font-size: 20px;
-  line-height: 36px;
-  color: #ffffff;
-  background-color: #756157;
-  text-transform: uppercase;
-}
 
 
 .advantages-title,
@@ -246,12 +239,32 @@ body {
   order: 3;
 }
 
+.search-hotel {
+  min-height: 406px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-button {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #ffffff;
+  width: 376px;
+  height: 52px;
+  align-self: center;
+  background-color: #756157;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
 .subscribe {
   background-image: url(/images/subscribe/subscribe-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
-  min-height: 412px;
+  min-height: 415px;
 }
 
 .subscribe-intro {
@@ -283,7 +296,20 @@ body {
   text-decoration: none;
 }
 
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  min-height: 120px;
+  margin: 0 auto;
+  background-color: #ffffff;
 
+}
+
+.footer-social-list{
+  width: 180px;
+  margin-left: 70px;
+
+}
 .footer-social .social-item-vk {
   background-image: url(/images/footer/footer-logo-vk.svg);
   background-repeat: no-repeat;
@@ -299,13 +325,21 @@ body {
   background-repeat: no-repeat;
 }
 
+.footer-logo {
+  width: 115px;
+  margin-right: 70px;
+  align-self: center;
+}
 .footer-contacts {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-contact-phone {
   font-size: 40px;
   line-height: 40px;
+  width: 720px;
+  align-self: center;
   text-decoration: none;
   color: inherit;
 }
