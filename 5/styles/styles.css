@@ -19,28 +19,27 @@ html {
 }
 
 body {
-  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
   background-color: #F2F2F2;
-
-
 }
 
-.main-container {
-  flex-grow: 1;
-}
 
 .page-container {
   margin: 0 auto;
   width: 1200px;
   background-color: #ffffff;
+}
+
+.page-container {
+  flex-grow: 1;
 }
 
 .navigation {
@@ -53,13 +52,14 @@ body {
   margin: 0;
   padding: 0;
   width: 590px;
-
 }
 
 .navigation-user{
   max-width: 320px;
   margin-left: auto;
-
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .logo{
@@ -139,8 +139,6 @@ body {
   text-align: center;
 }
 
-
-
 .advantages-title,
 .services-title {
   text-transform: uppercase;
@@ -157,6 +155,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  list-style: none;
   padding: 0;
   margin: 0;
 
@@ -210,6 +209,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -261,6 +261,7 @@ body {
 
 .subscribe {
   background-image: url(/images/subscribe/subscribe-background.jpg);
+  background-color: #D7D7D7;
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
@@ -271,7 +272,6 @@ body {
   font-size: 30px;
   line-height: 36px;
   color: #ffffff;
-  background-color:#D7D7D7;
   text-transform: uppercase;
 }
 
@@ -279,7 +279,6 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
-  background-color:#D7D7D7;
 }
 
 .subscribe-form {
@@ -296,12 +295,10 @@ body {
   text-decoration: none;
 }
 
-.page-footer-container {
+.page-footer {
   display: flex;
-  width: 1200px;
   min-height: 120px;
-  margin: 0 auto;
-  background-color: #ffffff;
+  padding: 40px 70px 30px;
 
 }
 
@@ -326,10 +323,11 @@ body {
 }
 
 .footer-logo {
-  width: 115px;
-  margin-right: 70px;
-  align-self: center;
+  width: 162px;
+  align-self: flex-end;
+  padding: 0;
 }
+
 .footer-contacts {
   display: flex;
   flex-direction: row;
@@ -347,23 +345,24 @@ body {
 /* catalog.html */
 
 .inner-header {
-  width: 1060px;
-  min-height: 107px;
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  flex-wrap: wrap;
+  width: 500px;
+  height: 78px;
+  padding-left: 70px;
+  padding-top: 35px;
 }
 
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
-  width: 495px;
-  height: 78;
   color: #ffffff;
-  background-color: #D7D7D7;
-  text-decoration: none;
-  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs {
+  margin: 8px 0 40px;
+  padding-bottom: 40px;
+  list-style: none;
 }
 
 .breadcrumbs a {
@@ -372,7 +371,6 @@ body {
   width: 73px;
   height: 21px;
   color: #ffffff;
-  background-color: #D7D7D7;
   text-decoration: none;
 }
 
@@ -381,51 +379,68 @@ body {
   background-repeat: no-repeat;
 }
 
-.breadcrumbs-about {
-  background-image: url(/images/breadscrumbs/breadscrumbs-arrow.svg);
-  background-repeat: no-repeat;
-}
-
 .filter-hotels {
   background-image: url(/images/catalog/catalog-background.jpg);
+  background-color: #c2b280;
   background-size: 100% cover;
   background-repeat: no-repeat;
   margin: 0;
-  padding: 0;
+  padding:0;
   min-height: 412px;
+}
+
+.filter-form{
+  margin: 40px 70px;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-content: center;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
 }
-
-.filter-infrastructure {
-  align-self: flex-start;
+.filter-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
-.filter-type {
-  align-self: flex-start;
-}
-
-.price-form {
-  align-self: flex-start;
-}
-
 
 .filter-title {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
-  background-color: #D7D7D7;
-  text-decoration: none;
 }
 
 .filter-group {
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
-  background-color: #D7D7D7
+  border: none;
+}
+
+.filter-infrastructure {
+  width: 150px;
+  padding: 0;
+  margin-top: 40px;
+  margin-right: 70px;
+  }
+
+.filter-type {
+  width: 190px;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.filter-price {
+  width: 290px;
+  padding: 0;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: 70px;
+}
+
+.price-form {
+  width: 191px;
+  padding: 0;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: 70px;
 }
 
 .apply-button {
