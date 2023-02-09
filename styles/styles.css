@@ -262,6 +262,7 @@ body {
 
 .subscribe {
   background-image: url(/images/subscribe/subscribe-background.jpg);
+  background-color: #D7D7D7;
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
@@ -272,7 +273,6 @@ body {
   font-size: 30px;
   line-height: 36px;
   color: #ffffff;
-  background-color:#D7D7D7;
   text-transform: uppercase;
 }
 
@@ -280,7 +280,6 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
-  background-color:#D7D7D7;
 }
 
 .subscribe-form {
@@ -417,35 +416,33 @@ body {
   border: none;
 }
 
-.filter-infrastructure{
+.filter-infrastructure {
   width: 150px;
   padding: 0;
   margin-top: 40px;
   margin-right: 70px;
   }
 
-.filter-type{
+.filter-type {
   width: 190px;
   padding: 0;
   margin-top: 40px;
 }
 
-.filter-price{
+.filter-price {
   width: 290px;
   padding: 0;
   margin-top: 40px;
   margin-right: auto;
   margin-left: 70px;
-
 }
 
-.price-form{
+.price-form {
   width: 191px;
   padding: 0px;
   margin-top: 40px;
   margin-right: auto;
   margin-left: 70px;
-
 }
 
 .apply-button {
