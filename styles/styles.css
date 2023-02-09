@@ -350,6 +350,8 @@ body {
 .inner-header {
   width: 500px;
   height: 78px;
+  padding-left: 70px;
+  padding-top: 35px;
 }
 
 .inner-header-title {
@@ -362,7 +364,7 @@ body {
 
 .breadcrumbs {
   margin: 8px 0 40px;
-  padding: 0;
+  padding-bottom: 40px;
   list-style: none;
 }
 
@@ -385,15 +387,15 @@ body {
   background-size: 100% cover;
   background-repeat: no-repeat;
   margin: 0;
-  padding: 36px 70px;
+  padding:0;
   min-height: 412px;
 }
 
 .filter-form{
+  margin: 40px 70px;
   display: flex;
   flex-wrap: no-wrap;
   justify-content: space-between;
-  align-items: flex-end;
 }
 .filter-list{
   list-style: none;
@@ -416,22 +418,33 @@ body {
 
 .filter-infrastructure{
   width: 150px;
-  margin: 40px 70px ;
-}
+  padding: 0;
+  margin-top: 40px;
+  margin-right: 70px;
+  }
 
 .filter-type{
   width: 190px;
-  margin: 40px auto;
+  padding: 0;
+  margin-top: 40px;
 }
 
 .filter-price{
   width: 290px;
-  margin: 40px 70px auto;
+  padding: 0;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: 70px;
+
 }
 
 .price-form{
   width: 191px;
-  margin: 40px 70px 50px;
+  padding: 0px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: 70px;
+
 }
 
 .apply-button {
