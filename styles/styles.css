@@ -14,19 +14,82 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
 
 body {
+  height: 100%;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  background-color: #F2F2F2;
+}
+
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 auto;
+  width: 1200px;
   background-color: #ffffff;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list{
+  margin: 0;
+  padding: 0;
+  width: 590px;
+}
+
+.navigation-user{
+  max-width: 320px;
+  margin-left: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo{
+  display: block;
+  margin: 0 auto;
+
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.navigation-list{
+  list-style: none;
 }
 
 .navigatoin-link {
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
   color: inherit;
   text-align: center;
   text-decoration: none;
@@ -44,6 +107,7 @@ body {
 .navigation-item-button {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
   color: #ffffff;
   background-color: #756157;
   text-decoration: none;
@@ -66,42 +130,51 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .intro-description {
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
   text-align: center;
 }
 
-.search-button{
-  font-size: 20px;
-  line-height: 36px;
-  color: #ffffff;
-  background-color: #756157;
-}
-.advantages-list {
-  text-align: center;
-}
-
-.advantages-title {
+.advantages-title,
+.services-title {
   text-transform: uppercase;
-
 }
 
-.advantages-description {
-  font-weight: 400;
+.advantages-description,
+.services-description {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.advantages-item {
+  width: 400px;
+  min-height: 385px;
+}
+
 .advantage-1 {
   color: #ffffff;
   background-color:#82B3D3;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
 }
+
 
 .advantage-2 {
   background-color: #83B3D312;
@@ -118,80 +191,123 @@ body {
 .advantage-5 {
   color: #ffffff;
   background-color: #83B3D3;
+  width: 1200px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.services-intro{
+  min-height: 246px;
+
 }
 
 .services {
   text-align: center;
-
+  margin: 0;
+  padding: 0;
+}
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.services-title {
-  text-transform: uppercase;
+.services-item {
+  width: 400px;
+  min-height: 385px;
 }
-
-.services-description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-}
-
 
 .service-1 {
   background-image: url(/images/advantages/advantages-house.svg);
   background-repeat: no-repeat;
   background-color: #83B3D312;
+  order: 1;
 }
 
 .service-2 {
   background-image: url(/images/advantages/advantages-icon-food.svg);
   background-repeat: no-repeat;
+  order: 2;
 }
 
 .service-3 {
   background-image: url(/images/advantages/advantages-icon-gifts.svg);
   background-repeat: no-repeat;
   background-color: #83B3D312;
+  order: 3;
 }
+
+.search-hotel {
+  min-height: 406px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-button {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #ffffff;
+  width: 376px;
+  height: 52px;
+  align-self: center;
+  background-color: #756157;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 
 .subscribe {
   background-image: url(/images/subscribe/subscribe-background.jpg);
+  background-color: #D7D7D7;
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
-  min-height: 412px;
+  min-height: 415px;
 }
 
 .subscribe-intro {
   font-size: 30px;
   line-height: 36px;
   color: #ffffff;
-  background-color:#D7D7D7;
+  text-transform: uppercase;
 }
 
 .subscribe-description {
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
-  background-color:#D7D7D7;
 }
 
 .subscribe-form {
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
 }
 .subscribe-button {
   font-size: 20px;
   line-height: 36px;
+  font-weight: 700;
   color: #ffffff;
   background-color:#82B3D3;
   text-transform: uppercase;
   text-decoration: none;
 }
 
+.page-footer {
+  display: flex;
+  min-height: 120px;
+  padding: 40px 70px 30px;
 
+}
+
+.footer-social-list{
+  width: 180px;
+  margin-left: 70px;
+
+}
 .footer-social .social-item-vk {
   background-image: url(/images/footer/footer-logo-vk.svg);
   background-repeat: no-repeat;
@@ -207,43 +323,55 @@ body {
   background-repeat: no-repeat;
 }
 
+.footer-logo {
+  width: 162px;
+  align-self: flex-end;
+  padding: 0;
+}
+
 .footer-contacts {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-contact-phone {
-  font-weight: 400;
   font-size: 40px;
   line-height: 40px;
+  width: 720px;
+  align-self: center;
   text-decoration: none;
   color: inherit;
 }
 
 /* catalog.html */
 
+.inner-header {
+  width: 500px;
+  height: 78px;
+  padding-left: 70px;
+  padding-top: 35px;
+}
+
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
-  background-color: #D7D7D7;
-  text-decoration: none;
-  text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
-
-.main-inner {
-  background-image: url(/images/catalog/catalog-background.jpg);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  min-height: 412px;
+.breadcrumbs {
+  margin: 8px 0 40px;
+  padding-bottom: 40px;
+  list-style: none;
 }
 
 .breadcrumbs a {
-  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  width: 73px;
+  height: 21px;
   color: #ffffff;
-  background-color: #D7D7D7;
   text-decoration: none;
 }
 
@@ -252,30 +380,74 @@ body {
   background-repeat: no-repeat;
 }
 
-.breadcrumbs-about {
-  background-image: url(/images/breadscrumbs/breadscrumbs-arrow.svg);
+.filter-hotels {
+  background-image: url(/images/catalog/catalog-background.jpg);
+  background-color: #c2b280;
+  background-size: 100% cover;
   background-repeat: no-repeat;
+  margin: 0;
+  padding:0;
+  min-height: 412px;
+}
+
+.filter-form{
+  margin: 40px 70px;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+}
+.filter-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .filter-title {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
-  background-color: #D7D7D7;
-  text-decoration: none;
 }
 
 .filter-group {
-  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
-  background-color: #D7D7D7
+  border: none;
+}
+
+.filter-infrastructure {
+  width: 150px;
+  padding: 0;
+  margin-top: 40px;
+  margin-right: 70px;
+  }
+
+.filter-type {
+  width: 190px;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.filter-price {
+  width: 290px;
+  padding: 0;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: 70px;
+}
+
+.price-form {
+  width: 191px;
+  padding: 0;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: 70px;
 }
 
 .apply-button {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
   text-align: center;
   color: #ffffff;
   background-color:#82B3D3;
@@ -286,6 +458,7 @@ body {
 .cancel-button {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
   text-align: center;
   color: #ffffff;
   background-color:#000000;
@@ -294,14 +467,12 @@ body {
 }
 
 .count-hotels {
-  font-weight: 400;
   font-size: 30px;
   line-height: 36px;
   text-decoration: none;
 }
 
 .select-control {
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-decoration: none;
@@ -326,16 +497,8 @@ body {
   text-decoration: none;
 }
 
-.type-of-livivng {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-  text-decoration: none;
-}
-
+.type-of-livivng,
 .price-range {
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -369,7 +532,6 @@ body {
 }
 
 .count-rating {
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   background-color:#F2F2F2;
@@ -401,6 +563,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .inner-subscribe-description {
