@@ -43,19 +43,51 @@ body {
   flex-grow: 1;
 }
 
+.navigation-logo {
+  display: flex;
+  margin-left: 70px;
+  border: 2px solid green;
+
+}
 .navigation {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  height: 64px;
 }
 
-.navigation-list{
+.navigation-list {
+  display: flex;
   margin: 0;
   padding: 0;
-  width: 590px;
+  min-width: 590px;
 }
 
-.navigation-user{
+.navigation-home {
+  min-width: 100px;
+  min-height: 64px;
+  padding: 20px 16px;
+  margin-left: 28px;
+  border: 2px solid green;
+}
+
+.navigation-about {
+  min-width: 100px;
+  min-height: 64px;
+  padding: 20px 16px;
+  border: 2px solid green;
+
+}
+
+.navigation-hotels{
+  min-width: 100px;
+  min-height: 64px;
+  border: 2px solid green;
+  padding: 20px 16px;
+
+}
+
+.navigation-user {
   max-width: 320px;
   margin-left: auto;
   list-style: none;
@@ -63,10 +95,9 @@ body {
   padding: 0;
 }
 
-.logo{
+.logo {
   display: block;
   margin: 0 auto;
-
 }
 
 .visually-hidden {
@@ -82,11 +113,12 @@ body {
   overflow: hidden;
 }
 
-.navigation-list{
+.navigation-list {
   list-style: none;
 }
 
-.navigatoin-link {
+.navigation-link {
+  display: block;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -104,6 +136,7 @@ body {
   background-image: url(/images/header/header-favorites-icon.svg);
   background-repeat: no-repeat;
 }
+
 .navigation-item-button {
   font-size: 16px;
   line-height: 20px;
@@ -113,6 +146,7 @@ body {
   text-decoration: none;
 
 }
+
 .welcome-sedona {
   background-image: url(/images/welcome/welcome-bottom-saw.svg), url(/images/welcome/welcome-background.jpg);
   background-size: 100% auto;
@@ -169,7 +203,7 @@ body {
 
 .advantage-1 {
   color: #ffffff;
-  background-color:#82B3D3;
+  background-color: #82B3D3;
   width: 1200px;
   display: flex;
   flex-direction: row;
@@ -196,9 +230,8 @@ body {
   flex-direction: row-reverse;
 }
 
-.services-intro{
+.services-intro {
   min-height: 246px;
-
 }
 
 .services {
@@ -206,6 +239,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .services-list {
   display: flex;
   justify-content: space-between;
@@ -286,12 +320,13 @@ body {
   font-size: 18px;
   line-height: 24px;
 }
+
 .subscribe-button {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
-  background-color:#82B3D3;
+  background-color: #82B3D3;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -300,14 +335,14 @@ body {
   display: flex;
   min-height: 120px;
   padding: 40px 70px 30px;
-
 }
 
-.footer-social-list{
+.footer-social-list {
   width: 180px;
   margin-left: 70px;
 
 }
+
 .footer-social .social-item-vk {
   background-image: url(/images/footer/footer-logo-vk.svg);
   background-repeat: no-repeat;
@@ -386,17 +421,18 @@ body {
   background-size: 100% cover;
   background-repeat: no-repeat;
   margin: 0;
-  padding:0;
+  padding: 0;
   min-height: 412px;
 }
 
-.filter-form{
+.filter-form {
   margin: 40px 70px;
   display: flex;
   flex-wrap: no-wrap;
   justify-content: space-between;
 }
-.filter-list{
+
+.filter-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -420,7 +456,7 @@ body {
   padding: 0;
   margin-top: 40px;
   margin-right: 70px;
-  }
+}
 
 .filter-type {
   width: 190px;
@@ -450,7 +486,7 @@ body {
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  background-color:#82B3D3;
+  background-color: #82B3D3;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -461,7 +497,7 @@ body {
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  background-color:#000000;
+  background-color: #000000;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -509,7 +545,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color:#756157;
+  background-color: #756157;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -518,7 +554,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color:#82B3D3;
+  background-color: #82B3D3;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -534,7 +570,7 @@ body {
 .count-rating {
   font-size: 16px;
   line-height: 20px;
-  background-color:#F2F2F2;
+  background-color: #F2F2F2;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -577,7 +613,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
-  background-color:#82B3D3;
+  background-color: #82B3D3;
   text-transform: uppercase;
   text-decoration: none;
 }
