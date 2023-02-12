@@ -29,6 +29,18 @@ body {
   background-color: #F2F2F2;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .page-container {
   display: flex;
@@ -43,12 +55,24 @@ body {
   flex-grow: 1;
 }
 
+/* Блок навигации основной */
+.navigation-link {
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
 .navigation-logo {
   display: flex;
   margin-left: 70px;
   border: 2px solid green;
 
 }
+
 .navigation {
   display: flex;
   width: 1200px;
@@ -58,9 +82,11 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  min-width: 590px;
+  width: 440px;
+  list-style: none
 }
 
 .navigation-home {
@@ -79,7 +105,7 @@ body {
 
 }
 
-.navigation-hotels{
+.navigation-hotels {
   min-width: 100px;
   min-height: 64px;
   border: 2px solid green;
@@ -87,64 +113,64 @@ body {
 
 }
 
-.navigation-user {
-  max-width: 320px;
-  margin-left: auto;
+/* Блок навигации пользователя */
+
+.navigation-list .navigation-user {
+  width: 320px;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
+  border: 2px solid green;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.navigation-list {
-  list-style: none;
-}
-
-.navigation-link {
-  display: block;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  color: inherit;
-  text-align: center;
-  text-decoration: none;
-}
-
-.navigation-item-search {
+.search-user {
   background-image: url(/images/header/header-search-icon.svg);
   background-repeat: no-repeat;
+  display: flex;
+  border: 2px solid green;
+  box-sizing: border-box;
+  min-width: 44px;
+  min-height: 64px;
+  padding: 0;
+  margin: 0;
 }
 
-.navigation-item-favorites {
+.favorites-user {
   background-image: url(/images/header/header-favorites-icon.svg);
   background-repeat: no-repeat;
+  border: 2px solid green;
+  box-sizing: border-box;
+  min-width: 44px;
+  min-height: 64px;
+  padding: 0;
+  margin: 0;
+
 }
 
-.navigation-item-button {
+.button-user {
   font-size: 16px;
   line-height: 20px;
+  display: block;
+  margin-right: 70px;
+  width: 160px;
+  height: 36px;
+  margin: 8px 34px;
   font-weight: 700;
   color: #ffffff;
   background-color: #756157;
   text-decoration: none;
+  border: 2px solid green;
+}
 
+
+
+/* Блок Welcome*/
+.logo {
+  display: block;
+  margin: 0 auto;
 }
 
 .welcome-sedona {
@@ -155,15 +181,20 @@ body {
   min-height: 485px;
 }
 
-
 .intro {
+  min-height: 282px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 .intro-title {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  margin-top: 69px;
+  padding: 0;
   text-transform: uppercase;
 }
 
@@ -172,17 +203,27 @@ body {
   line-height: 26px;
   color: #333333;
   text-align: center;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 69px;
 }
 
 .advantages-title,
 .services-title {
   text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin-top: 102px;
 }
 
 .advantages-description,
 .services-description {
   font-size: 18px;
   line-height: 21px;
+  display: block;
+  text-align: center;
+  margin-top: 62px;
+  margin-bottom: 102px;
   color: #333333;
 }
 
@@ -207,6 +248,8 @@ body {
   width: 1200px;
   display: flex;
   flex-direction: row;
+  text-align: center;
+
 }
 
 
@@ -232,13 +275,37 @@ body {
 
 .services-intro {
   min-height: 246px;
+  display: flex;
+  flex-direction: column;
 }
+
+.services-title-intro {
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  font-size: 30px;
+  line-height: 36px;
+  min-width: 505px;
+  min-height: 72px;
+  margin-top: 64px;
+  margin-bottom: 0;
+
+}
+
+.services-staff {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 64px;
+
+}
+
 
 .services {
   text-align: center;
   margin: 0;
   padding: 0;
 }
+
 
 .services-list {
   display: flex;
@@ -300,7 +367,12 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap ;
   min-height: 415px;
+  margin: 0;
+  padding: 0;
 }
 
 .subscribe-intro {
@@ -308,23 +380,47 @@ body {
   line-height: 36px;
   color: #ffffff;
   text-transform: uppercase;
+  padding-top: 96px;
+  margin: 0;
 }
 
 .subscribe-description {
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
+  margin-top: 20px;
+}
+
+.email-field {
+  width: 452px;
+  height: 47px;
+
 }
 
 .subscribe-form {
+  display: flex;
+  flex-direction: row;
+  width: 684px;
+  height: 52px;
   font-size: 18px;
   line-height: 24px;
+  margin-top: 54px;
+  margin-left: 258px;
+  margin-right: 258px;
+  margin-bottom: 104px;
 }
 
 .subscribe-button {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding: 8px 50px;
+  border: none;
+  width: 232px;
+  height: 52px;
+  display: block;
   color: #ffffff;
   background-color: #82B3D3;
   text-transform: uppercase;
