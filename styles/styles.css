@@ -109,7 +109,7 @@ body {
 
 /* Блок навигации пользователя */
 
-.navigation-list .navigation-user {
+.navigation-user {
   width: 320px;
   list-style: none;
   display: flex;
@@ -117,56 +117,51 @@ body {
   justify-content: flex-end;
   margin: 0;
   padding: 0;
-  border: 2px solid green;
+  margin-left: 140px;
+  padding-right: 70px;
 }
 
 .search-user {
   background-image: url(/images/header/header-search-icon.svg);
   background-repeat: no-repeat;
   display: flex;
-  border: 2px solid green;
-  box-sizing: border-box;
-  min-width: 44px;
-  min-height: 64px;
-  padding: 0;
-  margin: 0;
+  width: 44px;
+  height: 64px;
 }
+
 
 .favorites-user {
   background-image: url(/images/header/header-favorites-icon.svg);
   background-repeat: no-repeat;
-  border: 2px solid green;
-  box-sizing: border-box;
-  min-width: 44px;
-  min-height: 64px;
-  padding: 0;
-  margin: 0;
+  width: 44px;
+  height: 64px;
+  position: center;
+}
 
+.navigation-button-field{
+  width: 160px;
+  height: 36px;
+  margin-left: 18px;
 }
 
 .button-user {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
   display: block;
-  width: 160px;
-  height: 36px;
-
+  width: 92px;
+  height: 20px;
+  padding: 8px 34px;
   margin-top: 14px;
   margin-bottom: 14px;
-
-  font-weight: 700;
+  margin-right: 70px;
   color: #ffffff;
+  border-radius: 4px;
   background-color: #756157;
   text-decoration: none;
-  border: 2px solid green;
 }
 
-.navigation-item .button-user {
-  font-size: 16px;
-  line-height: 20px;
-  padding: 8px 34px 8px 34px ;
-
-}
 
 
 
@@ -358,10 +353,13 @@ body {
   color: #ffffff;
   width: 376px;
   height: 52px;
+  margin-bottom: 96px;
   align-self: center;
+  padding: 8px 25px;
   background-color: #756157;
   text-transform: uppercase;
   text-align: center;
+  border-radius: 4px;
 }
 
 
@@ -420,7 +418,7 @@ body {
   font-weight: 700;
   text-align: center;
   margin: 0;
-  padding: 8px 50px;
+  padding: 8px 20px;
   border: none;
   width: 232px;
   height: 52px;
@@ -429,6 +427,7 @@ body {
   background-color: #82B3D3;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .page-footer {
@@ -589,6 +588,7 @@ body {
   background-color: #82B3D3;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .cancel-button {
@@ -600,6 +600,7 @@ body {
   background-color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .count-hotels {
@@ -716,4 +717,5 @@ body {
   background-color: #82B3D3;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 4px;
 }
