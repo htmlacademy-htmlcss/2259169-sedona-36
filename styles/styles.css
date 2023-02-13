@@ -63,13 +63,15 @@ body {
   font-weight: 700;
   color: inherit;
   text-align: center;
+  padding: 20px 16px;
   text-decoration: none;
 }
 
 .navigation-logo {
   display: flex;
-  margin-left: 70px;
-  border: 2px solid green;
+  padding-left: 70px;
+  margin-right: 28px;
+  position: relative;
 
 }
 
@@ -92,24 +94,16 @@ body {
 .navigation-home {
   min-width: 100px;
   min-height: 64px;
-  padding: 20px 16px;
-  margin-left: 28px;
-  border: 2px solid green;
 }
 
 .navigation-about {
   min-width: 100px;
   min-height: 64px;
-  padding: 20px 16px;
-  border: 2px solid green;
-
 }
 
 .navigation-hotels {
   min-width: 100px;
   min-height: 64px;
-  border: 2px solid green;
-  padding: 20px 16px;
 
 }
 
@@ -154,10 +148,12 @@ body {
   font-size: 16px;
   line-height: 20px;
   display: block;
-  margin-right: 70px;
   width: 160px;
   height: 36px;
-  margin: 8px 34px;
+
+  margin-top: 14px;
+  margin-bottom: 14px;
+
   font-weight: 700;
   color: #ffffff;
   background-color: #756157;
@@ -165,12 +161,20 @@ body {
   border: 2px solid green;
 }
 
+.navigation-item .button-user {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 34px 8px 34px ;
+
+}
+
 
 
 /* Блок Welcome*/
-.logo {
+.sedona-logo {
   display: block;
   margin: 0 auto;
+  padding: 51px 371px 82px 371px;
 }
 
 .welcome-sedona {
