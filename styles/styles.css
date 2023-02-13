@@ -391,8 +391,9 @@ body {
 
 .email-field {
   width: 452px;
-  height: 47px;
+  height: 52px;
   background-color: #F2F2F2;
+  border: none;
 
 }
 
