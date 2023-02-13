@@ -348,11 +348,9 @@ body {
   font-weight: 700;
   line-height: 36px;
   color: #ffffff;
-  width: 376px;
-  height: 52px;
   margin-bottom: 96px;
   align-self: center;
-  padding: 8px 25px;
+  padding: 8px 50px;
   border: none;
   background-color: #756157;
   text-transform: uppercase;
@@ -416,12 +414,9 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
-  margin: 0;
-  padding: 8px 20px;
+  padding: 8px 50px;
   border: none;
-  width: 232px;
-  height: 52px;
-  display: block;
+
   color: #ffffff;
   background-color: #82B3D3;
   text-transform: uppercase;
@@ -612,6 +607,8 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
+  border: none;
+  padding: 8px 50px;
 }
 
 .cancel-button {
@@ -620,10 +617,11 @@ body {
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  background-color: #000000;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
+  border: none;
+  padding: 8px 58px;
 }
 
 .catalog-sort {
@@ -680,6 +678,10 @@ body {
   border: 2px solid yellowgreen;
   margin-left: 8px;
 }
+.hotel-card {
+  list-style: none;
+
+}
 
 .hotel-card-title {
   text-decoration: none;
@@ -700,6 +702,8 @@ body {
   background-color: #756157;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 8px 26px;
+  border-radius: 4px;
 }
 
 .add-favorites {
@@ -709,6 +713,9 @@ body {
   background-color: #82B3D3;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  border: none;
 }
 
 
@@ -722,9 +729,13 @@ body {
 .count-rating {
   font-size: 16px;
   line-height: 20px;
+  width: 140px;
+  height: 37px;
   background-color: #F2F2F2;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .pagination {
