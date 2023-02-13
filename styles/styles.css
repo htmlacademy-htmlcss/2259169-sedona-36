@@ -324,14 +324,12 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-color: #83B3D312;
-  order: 1;
 }
 
 .service-2 {
   background-image: url(/images/advantages/advantages-icon-food.svg);
   background-repeat: no-repeat;
   background-position: top;
-  order: 2;
 }
 
 .service-3 {
@@ -339,7 +337,6 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-color: #83B3D312;
-  order: 3;
 }
 
 .search-hotel {
@@ -422,7 +419,6 @@ body {
   text-align: center;
   padding: 8px 50px;
   border: none;
-
   color: #ffffff;
   background-color: #82B3D3;
   text-transform: uppercase;
