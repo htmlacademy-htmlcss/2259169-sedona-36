@@ -29,28 +29,29 @@
                 <a class="navigation-link" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
-            <ul class="navigation-user">
-              <li class="navigation-item-search">
-                <a class="navigation-link" href="#">
-                  <div> </div>
+            <ul class="inner navigation-user">
+              <li class="search-user">
+                <a class="navigation-link-user" href="#">
                   <span class="visually-hidden">
                     Поиск
                   </span>
                 </a>
               </li>
-              <li class="navigation-item-favorites">
-                <a class="navigation-link" href="#">
+              <li class="favorites-user">
+                <a class="navigation-link-user" href="#">
                   <span class="visually-hidden">
                     Избранное
                   </span>
                 </a>
               </li>
-              <li class="navigation-item">
-                <a class="navigation-item-button" href="#">хочу сюда</a>
+              <li class="navigation-button-field">
+                <a class="button-user" href="#">хочу сюда</a>
               </li>
             </ul>
           </nav>
         </header>
+
+
         <main class="main-container main-inner">
           <section class="filter-hotels">
             <header class="inner-header">
@@ -221,13 +222,12 @@
             </ul>
           </section>
           <section class="inner-subscribe">
-            <h2 class="inner-subscribe-intro">Подпишитесь на рассылку</h2>
-            <p class="inner-subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!
+            <h2 class="inner subscribe-intro">Подпишитесь на рассылку</h2>
+            <p class="inner subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!
             </p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="email">Введите ваш e-mail</label>
-              <input type="email" id="email" name="subscribe-email" placeholder="Ваш e-mail">
-              <button class="inner-subscribe-button" type="submit">Подписаться</button>
+              <input type="email" id="email" class="email-field" name="subscribe-email" placeholder="Ваш e-mail" aria-hidden="Введите ваш email">
+              <button class="inner subscribe-button" type="submit">Подписаться</button>
             </form>
           </section>
         </main>
