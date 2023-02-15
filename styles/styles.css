@@ -95,20 +95,7 @@ body {
   min-height: 64px;
 }
 
-.navigation-home {
-  min-width: 100px;
-  min-height: 64px;
-}
 
-.navigation-about {
-  min-width: 100px;
-  min-height: 64px;
-}
-
-.navigation-hotels {
-  min-width: 100px;
-  min-height: 64px;
-}
 
 /* Блок навигации пользователя */
 
@@ -123,7 +110,7 @@ body {
   margin-left: auto;
   min-width: 64px;
 }
-
+/* Нужно будет выставить падинги у ссылок поиска и избранного */
 .search-user {
   background-image: url(/images/header/header-search-icon.svg);
   background-position: center;
@@ -133,6 +120,10 @@ body {
   align-items: center;
 }
 
+.navigation-link-user {
+  display: block;
+  padding:34px 13px ;
+}
 
 .favorites-user {
   background-image: url(/images/header/header-favorites-icon.svg);
@@ -140,11 +131,6 @@ body {
   background-position: center;
   min-width: 44px;
   min-height: 64px;
-}
-
-.navigation-button-field {
-  min-width: 160px;
-  min-height: 36px;
 }
 
 .button-user {
@@ -539,11 +525,6 @@ body {
 
 /* catalog.html */
 
-.inner-header {
-  width: 500px;
-  height: 78px;
-}
-
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
@@ -582,7 +563,7 @@ body {
 .filter-hotels {
   background-image: url(/images/catalog/catalog-background.jpg);
   background-color: #c2b280;
-  background-size: 100% cover;
+  background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
   padding: 35px 70px 70px 70px;
