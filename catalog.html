@@ -118,11 +118,10 @@
               <fieldset class="filter-group filter-price">
                 <legend class="filter-title">Стоимость, ₽:</legend>
                 <div class="filter-title-range">
-                  <label for="price-range">Выберите стоимость</label>
-                  <input type="number" name="min-price" placeholder="От">
-                  <input type="number" name="max-price" placeholder="До">
-                  <input type="range" id="price-range" name="price-range" min="0" max="9000">
+                  <input type="number" name="min-price" class="min-price-field" placeholder="От">
+                  <input type="number" name="max-price" class="max-price-field" placeholder="До">
                 </div>
+                <input type="range" id="price-range" name="price-range" min="0" max="9000" aria-hidden="Выберите стоимость">
               </fieldset>
               <fieldset class="filter-group price-form">
                 <button class="apply-button" type="submit">Применить</button>
