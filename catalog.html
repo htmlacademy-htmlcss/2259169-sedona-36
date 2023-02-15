@@ -19,45 +19,46 @@
                 height="70">
             </a>
             <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigatoin-link" href="index.html">Главная</a>
+              <li class="navigation-item navigation-home">
+                <a class="navigation-link" href="index.html">Главная</a>
               </li>
-              <li class="navigation-item">
-                <a class="navigatoin-link" href="#">О Седоне</a>
+              <li class="navigation-item navigation-about">
+                <a class="navigation-link" href="#">О Седоне</a>
               </li>
-              <li class="navigation-item">
-                <a class="navigatoin-link" href="catalog.html">Гостиницы</a>
+              <li class="navigation-item navigation-hotels">
+                <a class="navigation-link" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
-            <ul class="navigation-user">
-              <li class="navigation-item-search">
-                <a class="navigatoin-link" href="#">
-                  <div> </div>
+            <ul class="inner navigation-user">
+              <li class="search-user">
+                <a class="navigation-link-user" href="#">
                   <span class="visually-hidden">
                     Поиск
                   </span>
                 </a>
               </li>
-              <li class="navigation-item-favorites">
-                <a class="navigatoin-link" href="#">
+              <li class="favorites-user">
+                <a class="navigation-link-user" href="#">
                   <span class="visually-hidden">
                     Избранное
                   </span>
                 </a>
               </li>
-              <li class="navigation-item">
-                <a class="navigation-item-button" href="#">хочу сюда</a>
+              <li class="navigation-button-field">
+                <a class="button-user" href="#">хочу сюда</a>
               </li>
             </ul>
           </nav>
         </header>
+
+
         <main class="main-container main-inner">
           <section class="filter-hotels">
             <header class="inner-header">
               <h1 class="inner-header-title">Гостиницы Седоны</h1>
               <ul class="breadcrumbs">
                 <li class="breadcrumbs-home">
-                  <a class="breadcrumbs-link" href="index.html">><span class="visually-hidden">
+                  <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">
                       Главная страница
                     </span></a>
                 </li>
@@ -117,14 +118,13 @@
               <fieldset class="filter-group filter-price">
                 <legend class="filter-title">Стоимость, ₽:</legend>
                 <div class="filter-title-range">
-                  <label for="price-range">Выберите стоимость</label>
-                  <input type="number" name="min-price" placeholder="От">
-                  <input type="number" name="max-price" placeholder="До">
-                  <input type="range" id="price-range" name="price-range" min="0" max="9000">
+                  <input type="number" name="min-price" class="min-price-field" placeholder="От">
+                  <input type="number" name="max-price" class="max-price-field" placeholder="До">
                 </div>
+                <input type="range" id="price-range" name="price-range" min="0" max="9000" aria-hidden="Выберите стоимость">
               </fieldset>
               <fieldset class="filter-group price-form">
-                <button class="apply-button" type="submit">Применить</button>>
+                <button class="apply-button" type="submit">Применить</button>
                 <button class="cancel-button" type="reset">Сбросить</button>
               </fieldset>
             </form>
@@ -222,12 +222,11 @@
           </section>
           <section class="inner-subscribe">
             <h2 class="inner-subscribe-intro">Подпишитесь на рассылку</h2>
-            <p class="inner-subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!
+            <p class="inner-subscribe-description">Только полезная информация и никакого спама, <br> честное бойскаутское!
             </p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="email">Введите ваш e-mail</label>
-              <input type="email" id="email" name="subscribe-email" placeholder="Ваш e-mail">
-              <button class="inner-subscribe-button" type="submit">Подписаться</button>
+              <input type="email" id="email" class="email-field" name="subscribe-email" placeholder="Ваш e-mail" aria-hidden="Введите ваш email">
+              <button class="inner subscribe-button" type="submit">Подписаться</button>
             </form>
           </section>
         </main>
@@ -235,17 +234,17 @@
             <section class="footer-social">
               <h2 class="visually-hidden">Социальные сети</h2>
               <ul class="footer-social-list">
-                <li class="footer-social-item social-item-vk">
+                <li class="social-item-vk">
                   <a class="button" href="#">
                     <span class="visually-hidden"> Наша группа в ВКонтакте</span>
                   </a>
                 </li>
-                <li class="footer-social-item social-item-tg">
+                <li class="social-item-tg">
                   <a class="button" href="#">
                     <span class="visually-hidden"> Наш телеграм канал</span>
                   </a>
                 </li>
-                <li class="footer-social-item social-item-youtube">
+                <li class="social-item-youtube">
                   <a class="button" href="#">
                     <span class="visually-hidden">Наш YouTube канал</span>
                   </a>
