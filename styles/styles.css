@@ -680,6 +680,7 @@ body {
   padding: 6.5px 0 6.5px 0;
   margin: 0;
   text-decoration: none;
+  text-transform: uppercase;
   text-align: center;
   align-self: center;
 }
@@ -726,6 +727,11 @@ body {
   margin-left: 8px;
 }
 
+.catalog {
+  padding: 20px 70px 40px 70px;
+  margin: 0 auto;
+}
+
 .hotel-list {
   list-style: none;
   display: grid;
@@ -737,52 +743,105 @@ body {
 }
 
 .hotel-card {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   padding: 20px;
   margin: 0 auto;
+  min-height: 438px;
 }
 
-.catalog {
-  padding: 20px 70px 40px 70px;
-  margin: 0 auto;
+.type-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 21px;
+  min-width: 300px;
+  margin: 0 0 16px 0;
+  padding: 0;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 36px;
+  min-width: 300px;
+  margin: 0 0 16px 0;
+  padding: 0;
+
+}
+
+.rating-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 36px;
+  min-width: 300px;
+  margin: 0 0 16px 0;
+  padding: 0;
+}
+
+
+
+.hotel-card-image {
+  margin: 0 0 16px 0;
+  padding: 0;
 }
 
 .hotel-card-title {
+  margin: 0 0 16px 0;
+  padding: 0;
   display: block;
   text-decoration: none;
-  min-height: 300px;
-  min-height: 28px;
 }
 
-.type-of-livivng,
+.type-of-livivng {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+
 .price-range {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .more-information {
+  display: block;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
   color: #ffffff;
   background-color: #756157;
   text-transform: uppercase;
   text-decoration: none;
   padding: 8px 26px;
+  margin: 0;
   border-radius: 4px;
 }
-
+/* Тут я добавил шрифт т.к. он не работал на этом элементе, показывал Arial, и падинги не работали, и размеры не выходили*/
 .add-favorites {
+  display: block;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
+  font-weight: 700;
   line-height: 20px;
   color: #ffffff;
   background-color: #82B3D3;
   text-transform: uppercase;
   text-decoration: none;
   padding: 8px 20px;
+  margin: 0;
   border-radius: 4px;
   border: none;
 }
@@ -791,20 +850,23 @@ body {
 .hotel-rating-star {
   background-image: url(/images/catalog/rating-star.svg);
   background-repeat: repeat-x;
+  background-position: center;
   min-height: 18px;
   width: 53px;
+  padding: 10px 6px;
+  margin: 0;
 }
 
 .count-rating {
   font-size: 16px;
   line-height: 20px;
-  width: 140px;
-  height: 37px;
   background-color: #F2F2F2;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   border-radius: 4px;
+  padding: 9px 22px 8px 23px;
+  margin: 0;
 }
 
 .pagination {
