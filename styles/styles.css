@@ -243,7 +243,6 @@ body {
   background-color: #82B3D3;
   width: 1200px;
   display: flex;
-  flex-direction: row;
   text-align: center;
 
 
@@ -426,7 +425,6 @@ body {
 
 .subscribe-form {
   display: flex;
-  flex-direction: row;
   width: 684px;
   height: 52px;
   font-size: 18px;
@@ -467,7 +465,6 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   padding: 0;
   margin: 0;
 }
@@ -510,7 +507,6 @@ body {
   padding-top: 45px;
   padding-bottom: 35px;
   display: flex;
-  flex-direction: row;
   margin-left: 195px ;
 }
 
@@ -535,7 +531,6 @@ body {
 
 .breadcrumbs {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   margin: 8px auto;
   list-style: none;
@@ -666,7 +661,6 @@ body {
 
 .sorting {
   display: flex;
-  flex-direction: row;
   min-width: 1060px;
   min-height: 49px;
   padding: 50px 70px 20px 70px;
@@ -755,7 +749,6 @@ body {
 
 .type-row {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   min-height: 21px;
   min-width: 300px;
@@ -765,7 +758,6 @@ body {
 
 .button-row {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   min-height: 36px;
   min-width: 300px;
@@ -776,7 +768,6 @@ body {
 
 .rating-row {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   min-height: 36px;
   min-width: 300px;
