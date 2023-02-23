@@ -96,7 +96,6 @@ body {
 }
 
 
-
 /* Блок навигации пользователя */
 
 .navigation-user {
@@ -150,6 +149,22 @@ body {
   text-decoration: none;
 }
 
+.button-user:hover {
+  background-color: #615048;
+}
+
+.button-user:focus {
+  background-color: #615048;
+}
+
+.button-user:active {
+  background-color: #756157;
+  color:#FFFFFF30;
+}
+.button-user:disabled {
+  background-color: #E5E5E5;
+
+}
 
 
 
@@ -385,8 +400,29 @@ body {
   text-transform: uppercase;
   text-align: center;
   border-radius: 4px;
+  cursor: pointer;
 }
 
+.search-button:hover {
+  background-color:#615048;
+
+}
+
+.search-button:focus {
+  background-color:#615048;
+
+}
+
+.search-button:active {
+  background-color:#756157;
+  color:#FFFFFF30;
+
+}
+
+.search-button:disabled {
+  background-color:#E5E5E5;
+
+}
 
 .subscribe {
   background-image: url(/images/subscribe/subscribe-background.jpg);
@@ -447,6 +483,24 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color:#68A2CA;
+}
+
+.subscribe-button:focus {
+  background-color:#68A2CA;
+}
+
+.subscribe-button:active {
+  background-color:#82B3D3;
+  color:#FFFFFF30;
+}
+
+.subscribe-button:disabled {
+  background-color:#E5E5E5;
 }
 
 .page-footer {
