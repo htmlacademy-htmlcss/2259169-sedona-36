@@ -770,18 +770,47 @@ body {
   padding: 8px 50px;
 }
 
+.apply-button:hover {
+  background-color:#68A2CA;
+
+}
+
+.apply-button:focus {
+  background-color: #68A2CA;
+
+}
+
+.apply-button:active {
+  background-color: #68A2CA;
+  color:#FFFFFF30 ;
+
+}
+
 .cancel-button {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
-  color: #ffffff;
+  color: #ffffff50;
+  background-color:#33333300;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
   border: none;
   padding: 8px 58px;
+}
+
+.cancel-button:hover {
+  color: #ffffff10;
+}
+
+.cancel-button:focus {
+  color: #ffffff;
+}
+
+.cancel-button:active {
+  color: #ffffff03;
 }
 
 .sorting {
