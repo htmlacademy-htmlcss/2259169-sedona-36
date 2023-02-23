@@ -517,6 +517,7 @@ body {
 }
 
 .footer-social-list {
+  position: relative;
   width: 180px;
   list-style: none;
   display: flex;
@@ -525,29 +526,69 @@ body {
   margin: 0;
 }
 
-.social-item-vk {
-  background-image: url(/images/footer/footer-logo-vk.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 48px;
-  height: 40px;
+
+
+.button-vk {
+  padding: 12px 12px;
+  margin: 0;
 }
 
-.social-item-tg {
-  background-image: url(/images/footer/footer-logo-telegram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 48px;
-  height: 40px;
+.button-tg {
+  padding: 12px 12px;
+  margin: 0;
 }
 
-.social-item-youtube {
-  background-image: url(/images/footer/footer-logo-youtube.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 48px;
-  height: 40px;
+.button-youtube {
+  padding: 12px 12px;
+  margin: 0;
 }
+
+.button-vk:hover path {
+  fill:#68A2CA ;
+}
+
+.button-tg:hover path {
+  fill:#68A2CA ;
+}
+
+.button-youtube:hover path {
+  fill:#68A2CA ;
+}
+
+.button-vk:focus path {
+  fill:#68A2CA ;
+}
+
+.button-tg:focus path {
+  fill:#68A2CA ;
+}
+
+.button-youtube:focus path {
+  fill:#68A2CA ;
+}
+
+.button-vk:active path {
+  fill:#68A2CA30 ;
+}
+
+.button-tg:active path {
+  fill:#68A2CA30 ;
+}
+
+.button-youtube:active path {
+  fill:#68A2CA30 ;
+}
+
+
+
+.social-icon {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
 
 .footer-logo {
   width: 162px;
@@ -556,6 +597,19 @@ body {
   padding-bottom: 39px;
   margin-left: 236px;
 }
+
+.html-academy-link:hover path {
+  fill:#756157;
+}
+
+.html-academy-link:focus path {
+  fill:#756157;
+}
+
+.html-academy-link:active path {
+  fill:#75615730;
+}
+
 
 .footer-contacts {
   min-width: 331px;
@@ -574,6 +628,19 @@ body {
   text-decoration: none;
   color: inherit;
 }
+
+.footer-contact-phone:hover {
+  color:#756157;
+}
+
+.footer-contact-phone:focus {
+  color:#756157;
+}
+
+.footer-contact-phone:active {
+  color:#75615730;
+}
+
 
 /* catalog.html */
 
@@ -958,6 +1025,18 @@ body {
   border-radius: 4px;
 }
 
+.pagination-link:hover {
+  background-color:#68A2CA;
+}
+
+.pagination-link:focus {
+  background-color:#68A2CA;
+}
+
+.pagination-link:active {
+  background-color:#82B3D3;
+}
+
 .pagination-current {
   font-size: 20px;
   min-width: 60px;
@@ -965,6 +1044,18 @@ body {
   line-height: 36px;
   background-color: #F2F2F2;
   text-decoration: none;
+}
+
+.pagination-current:hover {
+  background-color: #F2F2F2;
+}
+
+.pagination-current:focus {
+  background-color: #F2F2F2;
+}
+
+.pagination-current:active {
+  background-color: #F2F2F2;
 }
 
 .inner-subscribe {
