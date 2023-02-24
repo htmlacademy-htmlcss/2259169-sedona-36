@@ -137,6 +137,7 @@ body {
 }
 
 .favorites-user {
+  position: relative;
   background-image: url(/images/header/header-favorites-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -144,6 +145,21 @@ body {
   min-height: 64px;
   margin: 0 20px 0 0;
 }
+
+.favorites-user::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #68B738;
+  position: absolute;
+  left: 30px;
+  right: 10px;
+  bottom: 0;
+  top: 20px;
+  transform: translate(-50%, -50%);
+}
+
 
 .button-user {
   font-size: 16px;
@@ -273,7 +289,7 @@ body {
   left: 170px;
   top: 188px;
   height: 2px;
-  background-color:rgba(255, 255, 255, 0.3);
+  background-color:#FFFFFF30;
   content: "";
 }
 
@@ -284,7 +300,7 @@ body {
   left: 170px;
   top: 188px;
   height: 2px;
-  background-color:rgba(255, 255, 255, 0.3);
+  background-color:#FFFFFF30;
   content: "";
 }
 
@@ -295,7 +311,7 @@ body {
   left: 170px;
   top: 200px;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color:#00000030;
   content: "";
 }
 
@@ -306,7 +322,7 @@ body {
   left: 170px;
   top: 200px;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color:#00000030;
   content: "";
 }
 
@@ -317,7 +333,7 @@ body {
   left: 170px;
   top: 200px;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color:#00000030;
   content: "";
 }
 
