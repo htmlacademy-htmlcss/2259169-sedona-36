@@ -568,11 +568,20 @@ body {
 }
 
 .email-field {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
   width: 452px;
   height: 52px;
   background-color: #F2F2F2;
   border: none;
+  padding-top: 14px;
+  padding-right: auto;
+  padding-bottom: 14px;
+  padding-left: 20px;
 }
+
 
 .subscribe-form {
   display: flex;
@@ -958,6 +967,24 @@ body {
   min-width: 292px;
   min-height: 49px;
   margin-left: 200px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.select-control:hover{
+  border-color:#68A2CA ;
+}
+
+.select-control:focus{
+  border-color:#68A2CA ;
+}
+
+.select-control:active{
+  border-color: #3F5E72;
+}
+
+.select-control:disabled{
+  border-color: #00000030;
 }
 
 .show-cards {
