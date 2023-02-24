@@ -998,6 +998,19 @@ body {
   margin-left: auto;
 }
 
+.button-sort:hover{
+  border-color: #000000;
+}
+
+.button-sort:focus{
+  border-color: #68A2CA;
+}
+
+.button-sort:active{
+  border-color: #000000;
+}
+
+
 .show-fullscreen {
   background-image: url(/images/catalog/view-icon-2.svg);
   background-repeat: no-repeat;
