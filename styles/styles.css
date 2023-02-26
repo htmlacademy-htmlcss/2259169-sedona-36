@@ -821,6 +821,19 @@ body {
   background-position: center;
 }
 
+.breadcrumbs-link:hover{
+  color:#ffffff60;
+}
+
+.breadcrumbs-link:focus{
+  color:#ffffff;
+}
+
+.breadcrumbs-link:active{
+  color:#ffffff30;
+}
+
+
 .filter-hotels {
   background-image: url(/images/catalog/catalog-background.jpg);
   background-color: #c2b280;
