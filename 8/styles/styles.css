@@ -631,103 +631,63 @@ body {
   background-color:#E5E5E5;
 }
 
-.page-footer {
-  display: flex;
-  height: 120px;
-  padding: 0;
-  margin: 0;
-}
 
 .footer-social{
-  padding-left: 70px;
-  padding-top: 45px;
-  padding-bottom: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding:40px 70px 30px 70px;
+  margin: 0;
 }
 
 .footer-social-list {
   position: relative;
-  width: 180px;
+  min-width: 180px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   padding: 0;
   margin: 0;
 }
 
-
-
-.button-vk {
-  padding: 12px 12px;
+.social-icon{
+  display: block;
+}
+.footer-social-link {
+  display: flex;
+  padding: 0;
   margin: 0;
 }
 
-.button-tg {
+.social-vk {
+  padding: 13px 12px;
+}
+
+.social-tg {
   padding: 12px 12px;
-  margin: 0;
 }
 
-.button-youtube {
-  padding: 12px 12px;
-  margin: 0;
+.social-youtube {
+  padding: 11px 14px;
 }
 
-.button-vk:hover path {
+.footer-social-link:hover path {
   fill:#68A2CA ;
 }
 
-.button-tg:hover path {
+.footer-social-link:focus path {
   fill:#68A2CA ;
 }
 
-.button-youtube:hover path {
-  fill:#68A2CA ;
-}
-
-.button-vk:focus path {
-  fill:#68A2CA ;
-}
-
-.button-tg:focus path {
-  fill:#68A2CA ;
-}
-
-.button-youtube:focus path {
-  fill:#68A2CA ;
-}
-
-.button-vk:active path {
-  fill:#68A2CA30 ;
-}
-
-.button-tg:active path {
-  fill:#68A2CA30 ;
-}
-
-.button-youtube:active path {
+.footer-social-link:active path {
   fill:#68A2CA30 ;
 }
 
 
-
-.social-icon {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-}
-
-
-.footer-logo {
-  width: 162px;
-  padding-top: 49px;
-  padding-right: 70px;
-  padding-bottom: 39px;
-  margin-left: 200px;
-}
 .html-academy-link{
   display: block;
-  margin-right: 42px;
 }
 
 .html-academy-link:hover path {
@@ -743,22 +703,13 @@ body {
 }
 
 
-.footer-contacts {
-  min-width: 331px;
-  min-height: 40px;
-  padding-top: 45px;
-  padding-bottom: 35px;
-  display: flex;
-  margin-left: 195px ;
-}
-
 .footer-contact-phone {
   font-size: 40px;
   line-height: 40px;
-  width: 720px;
   align-self: center;
   text-decoration: none;
   color: inherit;
+  margin-right: 39px;
 }
 
 .footer-contact-phone:hover {
