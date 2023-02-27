@@ -63,6 +63,7 @@ body {
 
 /* Блок навигации основной */
 .navigation-link {
+  position: relative;
   display: block;
   font-size: 20px;
   line-height: 24px;
@@ -73,9 +74,18 @@ body {
   text-decoration: none;
 }
 
+.navigation-link-current::before {
+  position: absolute;
+  right: 16px;
+  left: 16px;
+  top: 63px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
+}
+
 .navigation-logo {
-  margin: 0 28px 0 0;
-  position: relative;
+  position: absolute;
 }
 
 .navigation {
@@ -88,13 +98,12 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 0 0 168px;
   padding: 0;
   width: 440px;
   list-style: none;
   min-height: 64px;
 }
-
 
 
 /* Блок навигации пользователя */
@@ -122,16 +131,35 @@ body {
 
 .navigation-link-user {
   display: block;
-  padding:34px 13px ;
+  padding: 32px 13px;
 }
 
 .favorites-user {
+  position: relative;
   background-image: url(/images/header/header-favorites-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
   min-width: 44px;
   min-height: 64px;
+  margin: 0 20px 0 0;
 }
+
+.favorites-count{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #FFFFFF;
+  padding: 5px 5px 5px 4px;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #68B738;
+  position: absolute;
+  top: 11px;
+  left: 20px;
+}
+
 
 .button-user {
   font-size: 16px;
@@ -150,6 +178,21 @@ body {
   text-decoration: none;
 }
 
+.button-user:hover {
+  background-color: #615048;
+}
+
+.button-user:focus {
+  background-color: #615048;
+}
+
+.button-user:active {
+  background-color: #756157;
+  color:#FFFFFF30;
+}
+.button-user:disabled {
+  background-color: #E5E5E5;
+}
 
 
 
@@ -168,6 +211,7 @@ body {
   padding: 51px 371px 82px 371px;
 }
 
+/* Блок Advantages intro */
 .intro {
   min-height: 282px;
   text-align: center;
@@ -195,15 +239,48 @@ body {
   margin: 0;
 }
 
-.advantages-title,
-.services-title {
+/* Блок Advantages */
+.wrapper-title {
+  position: relative;
+  font-size: 24px;
+  line-height: 28px;
   text-transform: uppercase;
   text-align: center;
   display: block;
   margin: 0 0 62px 0;
 }
 
-.advantages-description{
+.wrapper-title::before {
+  position: absolute;
+  min-width: 60px;
+  height: 2px;
+  background-color:#FFFFFF30;
+  top:86px;
+  left:85px;
+  content: "";
+}
+
+.advantages-title {
+  position: relative;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: 0 0 62px 0;
+}
+
+.advantages-title::before {
+  position: absolute;
+  min-width: 60px;
+  height: 2px;
+  background-color:#00000030;
+  top:86px;
+  left:85px;
+  content: "";
+}
+
+.advantages-description {
   font-size: 18px;
   line-height: 21px;
   display: block;
@@ -212,7 +289,7 @@ body {
   margin: 0 auto;
 }
 
-.wrapper-description{
+.wrapper-description {
   color: #ffffff;
 }
 
@@ -232,6 +309,7 @@ body {
   padding: 102px 85px;
 }
 
+
 .advantage-city,
 .advantage-devil {
   min-height: 385px;
@@ -243,10 +321,7 @@ body {
   background-color: #82B3D3;
   width: 1200px;
   display: flex;
-  flex-direction: row;
   text-align: center;
-
-
 }
 
 
@@ -273,13 +348,20 @@ body {
   flex-direction: row-reverse;
 }
 
-.services-intro {
-  min-height: 246px;
-  display: flex;
-  flex-direction: column;
-  padding: 65px 320px;
-  margin: 0 auto;
+/* Блок Services */
+.services {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 
+.services-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: 102px 0 30px 0;
 }
 
 .services-title-intro {
@@ -291,21 +373,22 @@ body {
   margin: 0 0 20px 0;
 }
 
-.services-staff {
-  text-align: center;
+.services-intro {
+  display: flex;
+  flex-direction: column;
+  min-height: 246px;
+  padding: 65px 320px;
   margin: 0 auto;
 }
 
-
-
-
-.services {
+.services-staff {
+  display: block;
+  font-size: 22px;
+  line-height:26px;
   text-align: center;
+  min-height: 26px ;
   margin: 0;
   padding: 0;
-}
-.services-title{
-  margin: 0 0 30px 0;
 }
 
 .services-description {
@@ -314,7 +397,7 @@ body {
   display: block;
   text-align: center;
   color: #333333;
-  margin: 0 auto;
+  margin: 0;
 }
 
 
@@ -325,6 +408,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  min-height: 385px;
 }
 
 .services-item {
@@ -333,25 +417,29 @@ body {
   padding: 81px 85px;
 }
 
+
 .service-1 {
+  background-color: #83B3D312;
   background-image: url(/images/advantages/advantages-house.svg);
   background-repeat: no-repeat;
-  background-position: top;
-  background-color: #83B3D312;
-}
+  background-position: bottom 232px right 162px;
 
+}
 .service-2 {
   background-image: url(/images/advantages/advantages-icon-food.svg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: bottom 232px right 162px;
+
 }
 
 .service-3 {
+  background-color: #83B3D312;
   background-image: url(/images/advantages/advantages-icon-gifts.svg);
   background-repeat: no-repeat;
-  background-position: top;
-  background-color: #83B3D312;
+  background-position: bottom 230px right 168px;
 }
+
+/* Блок Search-hotel*/
 
 .search-hotel {
   min-height: 406px;
@@ -361,17 +449,18 @@ body {
   margin: 0 auto;
 }
 
-.search-hotel-title{
+.search-hotel-title {
   margin: 0 0 20px 0;
   padding: 0 auto;
 }
 
-.search-hotel-description{
+.search-hotel-description {
   margin: 0 0 54px 0;
   padding: 0 auto;
 }
 
 .search-button {
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -385,8 +474,31 @@ body {
   text-transform: uppercase;
   text-align: center;
   border-radius: 4px;
+  cursor: pointer;
 }
 
+.search-button:hover {
+  background-color:#615048;
+
+}
+
+.search-button:focus {
+  background-color:#615048;
+
+}
+
+.search-button:active {
+  background-color:#756157;
+  color:#FFFFFF30;
+
+}
+
+.search-button:disabled {
+  background-color:#E5E5E5;
+
+}
+
+/* Блок Subscribe */
 
 .subscribe {
   background-image: url(/images/subscribe/subscribe-background.jpg);
@@ -418,15 +530,23 @@ body {
 }
 
 .email-field {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
   width: 452px;
   height: 52px;
   background-color: #F2F2F2;
   border: none;
+  padding-top: 14px;
+  padding-right: auto;
+  padding-bottom: 14px;
+  padding-left: 20px;
 }
+
 
 .subscribe-form {
   display: flex;
-  flex-direction: row;
   width: 684px;
   height: 52px;
   font-size: 18px;
@@ -436,6 +556,7 @@ body {
 }
 
 .subscribe-button {
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -446,82 +567,120 @@ body {
   background-color: #82B3D3;
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
 }
 
-.page-footer {
+.subscribe-button:hover {
+  background-color:#68A2CA;
+}
+
+.subscribe-button:focus {
+  background-color:#68A2CA;
+}
+
+.subscribe-button:active {
+  background-color:#82B3D3;
+  color:#FFFFFF30;
+}
+
+.subscribe-button:disabled {
+  background-color:#E5E5E5;
+}
+
+/* Блок Footer main/inner */
+
+.footer-social {
   display: flex;
-  height: 120px;
-  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding:40px 70px 30px 70px;
   margin: 0;
-}
-
-.footer-social{
-  padding-left: 70px;
-  padding-top: 45px;
-  padding-bottom: 35px;
 }
 
 .footer-social-list {
-  width: 180px;
+  position: relative;
+  min-width: 180px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  align-items: center;
   padding: 0;
   margin: 0;
 }
 
-.social-item-vk {
-  background-image: url(/images/footer/footer-logo-vk.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 48px;
-  height: 40px;
+.social-icon {
+  display: block;
 }
-
-.social-item-tg {
-  background-image: url(/images/footer/footer-logo-telegram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 48px;
-  height: 40px;
-}
-
-.social-item-youtube {
-  background-image: url(/images/footer/footer-logo-youtube.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 48px;
-  height: 40px;
-}
-
-.footer-logo {
-  width: 162px;
-  padding-top: 49px;
-  padding-right: 70px;
-  padding-bottom: 39px;
-  margin-left: 236px;
-}
-
-.footer-contacts {
-  min-width: 331px;
-  min-height: 40px;
-  padding-top: 45px;
-  padding-bottom: 35px;
+.footer-social-link {
   display: flex;
-  flex-direction: row;
-  margin-left: 195px ;
+  padding: 0;
+  margin: 0;
 }
+
+.social-vk {
+  padding: 13px 12px;
+}
+
+.social-tg {
+  padding: 12px 12px;
+}
+
+.social-youtube {
+  padding: 11px 14px;
+}
+
+.footer-social-link:hover path {
+  fill:#68A2CA ;
+}
+
+.footer-social-link:focus path {
+  fill:#68A2CA ;
+}
+
+.footer-social-link:active path {
+  fill:#68A2CA30 ;
+}
+
+.html-academy-link{
+  display: block;
+}
+
+.html-academy-link:hover path {
+  fill:#756157;
+}
+
+.html-academy-link:focus path {
+  fill:#756157;
+}
+
+.html-academy-link:active path {
+  fill:#75615730;
+}
+
 
 .footer-contact-phone {
   font-size: 40px;
   line-height: 40px;
-  width: 720px;
   align-self: center;
   text-decoration: none;
   color: inherit;
+  margin-right: 39px;
 }
+
+.footer-contact-phone:hover {
+  color:#756157;
+}
+
+.footer-contact-phone:focus {
+  color:#756157;
+}
+
+.footer-contact-phone:active {
+  color:#75615730;
+}
+
 
 /* catalog.html */
 
@@ -533,32 +692,64 @@ body {
   padding: 0;
 }
 
+/* Блок Breadscrumbs */
+
 .breadcrumbs {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  margin: 8px auto;
+  margin: 8px 0 0 0;
   list-style: none;
   padding: 0;
   min-width: 114px;
   min-height: 21px ;
 }
 
-.breadcrumbs a {
+.breadcrumbs-link {
+  position: relative;
   font-size: 16px;
   line-height: 21px;
-  width: 73px;
+  min-width: 73px;
   height: 21px;
   color: #ffffff;
   text-decoration: none;
-  margin: 0 0 0 21px;
+  margin: 0 29px 0 0;
 }
+
+.breadcrumbs-catalog::after {
+  position: absolute;
+  min-width: 9px;
+  height: 9px;
+  border-top: 2px solid #FFFFFF;
+  border-right: 2px solid #FFFFFF;
+  transform: rotate(45deg);
+  border-radius: 1px;
+  padding: 0;
+  bottom: 5px;
+  right: 84px;
+  content: "";
+}
+
 
 .breadcrumbs-home {
   background-image: url(/images/breadscrumbs/breadscrumbs-home.svg);
   background-repeat: no-repeat;
   background-position: center;
+  padding: 6px;
 }
+
+.breadcrumbs-link:hover {
+  color:#ffffff60;
+}
+
+.breadcrumbs-link:focus {
+  color:#ffffff;
+}
+
+.breadcrumbs-link:active {
+  color:#ffffff30;
+}
+
+/* Блок Filter-hotels */
 
 .filter-hotels {
   background-image: url(/images/catalog/catalog-background.jpg);
@@ -584,8 +775,18 @@ body {
 }
 
 .filter-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  color: #ffffff;
+}
+
+.control {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
   color: #ffffff;
 }
 
@@ -607,18 +808,73 @@ body {
   padding: 0;
   margin-top: 40px;
 }
-.filter-title-range{
+
+.filter-title-range {
   display: flex;
 }
 
 .min-price-field {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
   width: 143px;
   height: 48px;
+  background-color: #F2F2F2;
+  border: none;
+  margin: 0 2px 0 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.min-price-field::placeholder {
+  transform: translateX(106px);
+}
+
+.min-price-field:hover {
+  background-color: #E6E6E6;
+}
+
+.min-price-field:focus {
+  border: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+  outline: none;
+}
+
+.min-price-field:active {
+  border: 3px solid #000000;
+  background-color: #F2F2F2;
 }
 
 .max-price-field {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
   width: 143px;
   height: 48px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.max-price-field::placeholder {
+  transform: translateX(103px);
+}
+
+
+.max-price-field:hover {
+  background-color: #E6E6E6;
+}
+
+.max-price-field:focus {
+  border: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+  outline: none;
+}
+
+.max-price-field:active {
+  border: 3px solid #000000;
+  background-color: #F2F2F2;
 }
 
 .filter-price {
@@ -638,35 +894,74 @@ body {
 }
 
 .apply-button {
+  display: block;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  text-align: center;
   color: #ffffff;
   background-color: #82B3D3;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
   border: none;
-  padding: 8px 50px;
+  padding: 8px 45px;
+  margin: 0 0 32px 0;
+}
+
+.apply-button:hover {
+  background-color:#68A2CA;
+
+}
+
+.apply-button:focus {
+  background-color: #68A2CA;
+
+}
+
+.apply-button:active {
+  background-color: #68A2CA;
+  color:#FFFFFF30 ;
+
 }
 
 .cancel-button {
+  display: block;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  text-align: center;
   color: #ffffff;
+  background-color:#33333300;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
   border: none;
-  padding: 8px 58px;
+  padding: 8px 50px;
+  margin-right: 0;
 }
+
+.cancel-button:hover {
+  color: #ffffff60;
+}
+
+.cancel-button:focus {
+  color: #ffffff;
+  border: 2px solid #83B3D3;
+}
+
+.cancel-button:active {
+  color: #ffffff30;
+}
+
+.cancel-button:disabled {
+  color: #ffffff10;
+}
+
+/* Блок Sorting */
 
 .sorting {
   display: flex;
-  flex-direction: row;
   min-width: 1060px;
   min-height: 49px;
   padding: 50px 70px 20px 70px;
@@ -677,8 +972,8 @@ body {
   display: block;
   font-size: 30px;
   line-height: 36px;
-  padding: 6.5px 0 6.5px 0;
-  margin: 0;
+  padding: 0;
+  margin: 7px 0 7px 0;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -686,12 +981,34 @@ body {
 }
 
 .select-control {
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  font-weight: 400;
   text-decoration: none;
   min-width: 292px;
   min-height: 49px;
   margin-left: 200px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding-left: 16px;
+}
+
+
+.select-control:hover {
+  border-color:#68A2CA ;
+}
+
+.select-control:focus {
+  border-color:#68A2CA ;
+}
+
+.select-control:active {
+  border-color: #3F5E72;
+}
+
+.select-control:disabled {
+  border-color: #00000030;
 }
 
 .show-cards {
@@ -704,6 +1021,19 @@ body {
   border-radius: 4px;
   margin-left: auto;
 }
+
+.button-sort:hover {
+  border-color: #000000;
+}
+
+.button-sort:focus {
+  border-color: #68A2CA;
+}
+
+.button-sort:active {
+  border-color: #000000;
+}
+
 
 .show-fullscreen {
   background-image: url(/images/catalog/view-icon-2.svg);
@@ -726,6 +1056,8 @@ body {
   border-radius: 4px;
   margin-left: 8px;
 }
+
+/* Блок Hotel cards */
 
 .catalog {
   padding: 20px 70px 40px 70px;
@@ -755,7 +1087,6 @@ body {
 
 .type-row {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   min-height: 21px;
   min-width: 300px;
@@ -765,7 +1096,6 @@ body {
 
 .button-row {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   min-height: 36px;
   min-width: 300px;
@@ -776,7 +1106,6 @@ body {
 
 .rating-row {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   min-height: 36px;
   min-width: 300px;
@@ -785,13 +1114,15 @@ body {
 }
 
 
-
 .hotel-card-image {
   margin: 0 0 16px 0;
   padding: 0;
 }
 
 .hotel-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
   margin: 0 0 16px 0;
   padding: 0;
   display: block;
@@ -830,7 +1161,23 @@ body {
   margin: 0;
   border-radius: 4px;
 }
-/* Тут я добавил шрифт т.к. он не работал на этом элементе, показывал Arial, и падинги не работали, и размеры не выходили*/
+
+.more-information:hover {
+  background-color: #615048;
+
+}
+
+.more-information:focus {
+  background-color: #615048;
+
+}
+
+.more-information:active {
+  background-color: #756157;
+  color:#ffffff30 ;
+}
+
+
 .add-favorites {
   display: block;
   font-family: "PT Sans", sans-serif;
@@ -845,6 +1192,20 @@ body {
   margin: 0;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
+}
+
+.add-favorites:hover {
+  background-color: #68A2CA;
+}
+
+.add-favorites:focus {
+  background-color: #68A2CA;
+}
+
+.add-favorites:active {
+  background-color: #82B3D3;
+  color: #FFFFFF30;
 }
 
 
@@ -870,9 +1231,11 @@ body {
   margin: 0;
 }
 
+/* Блок Pagination*/
+
 .pagination {
   display: grid;
-  grid-template-columns: repeat(6, 60px);
+  grid-template-columns: repeat(auto-fit, minmax(60px, min-content));
   grid-gap: 8px;
   list-style: none;
   text-align: center;
@@ -881,7 +1244,6 @@ body {
   margin: 0;
   padding: 40px 70px 60px 70px;
 }
-
 
 
 .pagination-next {
@@ -910,6 +1272,18 @@ body {
   border-radius: 4px;
 }
 
+.pagination-link:hover {
+  background-color:#68A2CA;
+}
+
+.pagination-link:focus {
+  background-color:#68A2CA;
+}
+
+.pagination-link:active {
+  background-color:#82B3D3;
+}
+
 .pagination-current {
   font-size: 20px;
   min-width: 60px;
@@ -918,6 +1292,20 @@ body {
   background-color: #F2F2F2;
   text-decoration: none;
 }
+
+.pagination-current:hover {
+  background-color: #F2F2F2;
+}
+
+.pagination-current:focus {
+  background-color: #F2F2F2;
+}
+
+.pagination-current:active {
+  background-color: #F2F2F2;
+}
+
+/* Блок inner subscribe */
 
 .inner-subscribe {
   display: flex;
