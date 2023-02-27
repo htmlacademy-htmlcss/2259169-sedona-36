@@ -238,7 +238,7 @@ body {
   margin: 0;
 }
 
-.wrapper-title{
+.wrapper-title {
   position: relative;
   font-size: 24px;
   line-height: 28px;
@@ -393,7 +393,8 @@ body {
   margin: 0;
   padding: 0;
 }
-.services-title{
+
+.services-title {
   margin: 102px 0 30px 0;
 }
 
@@ -424,7 +425,7 @@ body {
 }
 
 
-.service-1{
+.service-1 {
   background-color: #83B3D312;
   background-image: url(/images/advantages/advantages-house.svg);
   background-repeat: no-repeat;
@@ -454,12 +455,12 @@ body {
   margin: 0 auto;
 }
 
-.search-hotel-title{
+.search-hotel-title {
   margin: 0 0 20px 0;
   padding: 0 auto;
 }
 
-.search-hotel-description{
+.search-hotel-description {
   margin: 0 0 54px 0;
   padding: 0 auto;
 }
@@ -592,7 +593,7 @@ body {
 }
 
 
-.footer-social{
+.footer-social {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -612,7 +613,7 @@ body {
   margin: 0;
 }
 
-.social-icon{
+.social-icon {
   display: block;
 }
 .footer-social-link {
@@ -698,49 +699,55 @@ body {
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
-  margin: 8px auto;
+  margin: 8px 0 0 0;
   list-style: none;
   padding: 0;
   min-width: 114px;
   min-height: 21px ;
 }
 
-.arrow {
-  width: 9px;
+.breadcrumbs-link {
+  position: relative;
+  font-size: 16px;
+  line-height: 21px;
+  min-width: 73px;
+  height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 29px 0 0;
+}
+
+.breadcrumbs-catalog::after {
+  position: absolute;
+  min-width: 9px;
   height: 9px;
   border-top: 2px solid #FFFFFF;
   border-right: 2px solid #FFFFFF;
   transform: rotate(45deg);
   border-radius: 1px;
-  margin: 0;
   padding: 0;
+  bottom: 5px;
+  right: 84px;
+  content: "";
 }
 
-.breadcrumbs a {
-  font-size: 16px;
-  line-height: 21px;
-  width: 73px;
-  height: 21px;
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0 0 0 21px;
-}
 
 .breadcrumbs-home {
   background-image: url(/images/breadscrumbs/breadscrumbs-home.svg);
   background-repeat: no-repeat;
   background-position: center;
+  padding: 6px;
 }
 
-.breadcrumbs-link:hover{
+.breadcrumbs-link:hover {
   color:#ffffff60;
 }
 
-.breadcrumbs-link:focus{
+.breadcrumbs-link:focus {
   color:#ffffff;
 }
 
-.breadcrumbs-link:active{
+.breadcrumbs-link:active {
   color:#ffffff30;
 }
 
@@ -792,7 +799,8 @@ body {
   padding: 0;
   margin-top: 40px;
 }
-.filter-title-range{
+
+.filter-title-range {
   display: flex;
 }
 
@@ -807,17 +815,17 @@ body {
   transform: translateX(106px);
 }
 
-.min-price-field:hover{
+.min-price-field:hover {
   background-color: #E6E6E6;
 }
 
-.min-price-field:focus{
+.min-price-field:focus {
   border: 3px solid #83B3D3;
   background-color: #E6E6E6;
   outline: none;
 }
 
-.min-price-field:active{
+.min-price-field:active {
   border: 3px solid #000000;
   background-color: #F2F2F2;
 }
@@ -828,22 +836,23 @@ body {
   background-color: #F2F2F2;
   border: none;
 }
+
 .max-price-field::placeholder {
   transform: translateX(103px);
 }
 
 
-.max-price-field:hover{
+.max-price-field:hover {
   background-color: #E6E6E6;
 }
 
-.max-price-field:focus{
+.max-price-field:focus {
   border: 3px solid #83B3D3;
   background-color: #E6E6E6;
   outline: none;
 }
 
-.max-price-field:active{
+.max-price-field:active {
   border: 3px solid #000000;
   background-color: #F2F2F2;
 }
@@ -964,19 +973,19 @@ body {
 }
 
 
-.select-control:hover{
+.select-control:hover {
   border-color:#68A2CA ;
 }
 
-.select-control:focus{
+.select-control:focus {
   border-color:#68A2CA ;
 }
 
-.select-control:active{
+.select-control:active {
   border-color: #3F5E72;
 }
 
-.select-control:disabled{
+.select-control:disabled {
   border-color: #00000030;
 }
 
@@ -991,15 +1000,15 @@ body {
   margin-left: auto;
 }
 
-.button-sort:hover{
+.button-sort:hover {
   border-color: #000000;
 }
 
-.button-sort:focus{
+.button-sort:focus {
   border-color: #68A2CA;
 }
 
-.button-sort:active{
+.button-sort:active {
   border-color: #000000;
 }
 
@@ -1081,7 +1090,6 @@ body {
 }
 
 
-
 .hotel-card-image {
   margin: 0 0 16px 0;
   padding: 0;
@@ -1144,7 +1152,8 @@ body {
   background-color: #756157;
   color:#ffffff30 ;
 }
-/* Тут я добавил шрифт т.к. он не работал на этом элементе, показывал Arial, и падинги не работали, и размеры не выходили*/
+
+
 .add-favorites {
   display: block;
   font-family: "PT Sans", sans-serif;
