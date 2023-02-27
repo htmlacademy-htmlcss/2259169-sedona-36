@@ -211,6 +211,7 @@ body {
   padding: 51px 371px 82px 371px;
 }
 
+/* Блок Advantages intro */
 .intro {
   min-height: 282px;
   text-align: center;
@@ -238,6 +239,7 @@ body {
   margin: 0;
 }
 
+/* Блок Advantages */
 .wrapper-title {
   position: relative;
   font-size: 24px;
@@ -278,16 +280,6 @@ body {
   content: "";
 }
 
-
-.services-title {
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  text-align: center;
-  display: block;
-  margin: 0 0 62px 0;
-}
-
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
@@ -296,7 +288,6 @@ body {
   color: #333333;
   margin: 0 auto;
 }
-
 
 .wrapper-description {
   color: #ffffff;
@@ -334,7 +325,6 @@ body {
 }
 
 
-
 .advantage-2 {
   background-color: #83B3D312;
   padding: 113px 85px;
@@ -358,12 +348,20 @@ body {
   flex-direction: row-reverse;
 }
 
-.services-intro {
-  display: flex;
-  flex-direction: column;
-  min-height: 246px;
-  padding: 65px 320px;
-  margin: 0 auto;
+/* Блок Services */
+.services {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.services-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: 102px 0 30px 0;
 }
 
 .services-title-intro {
@@ -375,6 +373,14 @@ body {
   margin: 0 0 20px 0;
 }
 
+.services-intro {
+  display: flex;
+  flex-direction: column;
+  min-height: 246px;
+  padding: 65px 320px;
+  margin: 0 auto;
+}
+
 .services-staff {
   display: block;
   font-size: 22px;
@@ -383,19 +389,6 @@ body {
   min-height: 26px ;
   margin: 0;
   padding: 0;
-}
-
-
-
-
-.services {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.services-title {
-  margin: 102px 0 30px 0;
 }
 
 .services-description {
@@ -446,6 +439,7 @@ body {
   background-position: bottom 230px right 168px;
 }
 
+/* Блок Search-hotel*/
 
 .search-hotel {
   min-height: 406px;
@@ -503,6 +497,8 @@ body {
   background-color:#E5E5E5;
 
 }
+
+/* Блок Subscribe */
 
 .subscribe {
   background-image: url(/images/subscribe/subscribe-background.jpg);
@@ -592,6 +588,7 @@ body {
   background-color:#E5E5E5;
 }
 
+/* Блок Footer main/inner */
 
 .footer-social {
   display: flex;
@@ -646,7 +643,6 @@ body {
   fill:#68A2CA30 ;
 }
 
-
 .html-academy-link{
   display: block;
 }
@@ -695,6 +691,8 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* Блок Breadscrumbs */
 
 .breadcrumbs {
   display: flex;
@@ -751,6 +749,7 @@ body {
   color:#ffffff30;
 }
 
+/* Блок Filter-hotels */
 
 .filter-hotels {
   background-image: url(/images/catalog/catalog-background.jpg);
@@ -879,14 +878,14 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  text-align: center;
   color: #ffffff;
   background-color: #82B3D3;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
   border: none;
-  padding: 8px 50px;
+  padding: 8px 45px;
+  margin: 0 0 32px 0;
 }
 
 .apply-button:hover {
@@ -911,14 +910,14 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  text-align: center;
   color: #ffffff;
   background-color:#33333300;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
   border: none;
-  padding: 8px 54px;
+  padding: 8px 50px;
+  margin-right: 0;
 }
 
 .cancel-button:hover {
@@ -927,7 +926,7 @@ body {
 
 .cancel-button:focus {
   color: #ffffff;
-  border: 3px solid #83B3D3;
+  border: 2px solid #83B3D3;
 }
 
 .cancel-button:active {
@@ -937,6 +936,8 @@ body {
 .cancel-button:disabled {
   color: #ffffff10;
 }
+
+/* Блок Sorting */
 
 .sorting {
   display: flex;
@@ -1034,6 +1035,8 @@ body {
   border-radius: 4px;
   margin-left: 8px;
 }
+
+/* Блок Hotel cards */
 
 .catalog {
   padding: 20px 70px 40px 70px;
@@ -1207,6 +1210,8 @@ body {
   margin: 0;
 }
 
+/* Блок Pagination*/
+
 .pagination {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60px, min-content));
@@ -1278,6 +1283,8 @@ body {
 .pagination-current:active {
   background-color: #F2F2F2;
 }
+
+/* Блок inner subscribe */
 
 .inner-subscribe {
   display: flex;
