@@ -77,7 +77,6 @@ body {
 .navigation-link-current::before {
   position: absolute;
   right: 16px;
-  bottom: 0;
   left: 16px;
   top: 63px;
   height: 2px;
@@ -86,7 +85,6 @@ body {
 }
 
 .navigation-logo {
-  margin: 0 28px 0 0;
   position: absolute;
 }
 
@@ -153,16 +151,13 @@ body {
   line-height: 10px;
   color: #FFFFFF;
   padding: 5px 5px 5px 4px;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: #68B738;
   position: absolute;
-  left: 30px;
-  right: 10px;
-  bottom: 0;
-  top: 20px;
-  transform: translate(-50%, -50%);
+  top: 11px;
+  left: 20px;
 }
 
 
@@ -197,7 +192,6 @@ body {
 }
 .button-user:disabled {
   background-color: #E5E5E5;
-
 }
 
 
@@ -244,18 +238,57 @@ body {
   margin: 0;
 }
 
-.advantages-title,
-.services-title {
+.wrapper-title{
+  position: relative;
   font-size: 24px;
   line-height: 28px;
-
   text-transform: uppercase;
   text-align: center;
   display: block;
   margin: 0 0 62px 0;
 }
 
-.advantages-description{
+.wrapper-title::before {
+  position: absolute;
+  min-width: 60px;
+  height: 2px;
+  background-color:#FFFFFF30;
+  top:86px;
+  left:85px;
+  content: "";
+}
+
+.advantages-title {
+  position: relative;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: 0 0 62px 0;
+}
+
+.advantages-title::before {
+  position: absolute;
+  min-width: 60px;
+  height: 2px;
+  background-color:#00000030;
+  top:86px;
+  left:85px;
+  content: "";
+}
+
+
+.services-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: 0 0 62px 0;
+}
+
+.advantages-description {
   font-size: 18px;
   line-height: 21px;
   display: block;
@@ -265,7 +298,7 @@ body {
 }
 
 
-.wrapper-description{
+.wrapper-description {
   color: #ffffff;
 }
 
@@ -280,67 +313,11 @@ body {
 }
 
 .advantages-item {
-  position: relative;
   width: 400px;
   min-height: 385px;
   padding: 102px 85px;
 }
 
-
-.advantage-city::before {
-  position: absolute;
-  right: 170px;
-  bottom: 0;
-  left: 170px;
-  top: 188px;
-  height: 2px;
-  background-color:#FFFFFF30;
-  content: "";
-}
-
-.advantage-devil::before {
-  position: absolute;
-  right: 170px;
-  bottom: 0;
-  left: 170px;
-  top: 188px;
-  height: 2px;
-  background-color:#FFFFFF30;
-  content: "";
-}
-
-.advantage-2::before {
-  position: absolute;
-  right: 170px;
-  bottom: 0;
-  left: 170px;
-  top: 200px;
-  height: 2px;
-  background-color:#00000030;
-  content: "";
-}
-
-.advantage-3::before {
-  position: absolute;
-  right: 170px;
-  bottom: 0;
-  left: 170px;
-  top: 200px;
-  height: 2px;
-  background-color:#00000030;
-  content: "";
-}
-
-.advantage-4::before {
-  position: absolute;
-  right: 170px;
-  bottom: 0;
-  left: 170px;
-  top: 200px;
-  height: 2px;
-  background-color:#00000030;
-  content: "";
-}
 
 .advantage-city,
 .advantage-devil {
@@ -467,23 +444,6 @@ body {
   background-repeat: no-repeat;
   background-position: bottom 230px right 168px;
 }
-
-.icon-food {
-  margin: 0 0 30px 0;
-  padding: 0;
-}
-
-.icon-house {
-  margin: 0 0 31px 0;
-  padding: 0;
-}
-
-.icon-gift {
-  margin: 0 0 28px 0;
-  padding: 0;
-}
-
-
 
 
 .search-hotel {
