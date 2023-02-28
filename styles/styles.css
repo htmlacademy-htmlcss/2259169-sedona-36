@@ -75,6 +75,10 @@ body {
   text-decoration: none;
 }
 
+.navigation-link:hover{
+  outline: 1px solid #68A2CA;
+}
+
 .navigation-link-current::before {
   position: absolute;
   right: 16px;
@@ -133,6 +137,10 @@ body {
 .navigation-link-user {
   display: block;
   padding: 32px 13px;
+}
+
+.navigation-link-user:hover{
+  outline: 1px solid #68A2CA;
 }
 
 .favorites-user {
@@ -1069,7 +1077,7 @@ body {
 
 .cancel-button:focus {
   color: #ffffff;
-  border: 2px solid #83B3D3;
+  outline: 2px solid #83B3D3;
 }
 
 .cancel-button:active {
