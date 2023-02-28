@@ -75,8 +75,8 @@ body {
   text-decoration: none;
 }
 
-.navigation-link:hover{
-  outline: 1px solid #68A2CA;
+.navigation-link:hover {
+  color: #00000070;
 }
 
 .navigation-link-current::before {
@@ -137,10 +137,6 @@ body {
 .navigation-link-user {
   display: block;
   padding: 32px 13px;
-}
-
-.navigation-link-user:hover{
-  outline: 1px solid #68A2CA;
 }
 
 .favorites-user {
@@ -815,29 +811,30 @@ body {
   cursor: pointer;
 }
 
-/* Не работает аутлайн при фокусе на mark */
 
-.control:focus .control-mark {
-  outline: 2px solid #83B3D3;
+.control-input:focus + .control-mark{
+  outline: 3px solid #83B3D3;
 }
 
-.control:focus .control-label {
+.contro:focus .control-label {
   color: #FFFFFF;
 }
 
-.control:hover .control-mark {
+
+.control-input:hover + .control-mark {
   background: #FFFFFF60;
 }
 
-.control:hover .control-label {
+.control:hover  .control-label {
   color: #FFFFFF60;
 }
 
-.control:active .control-mark {
+
+.control-input:active + .control-mark {
   background: #FFFFFF60;
 }
 
-.control:active .control-label {
+.control:active  .control-label {
   color: #FFFFFF60;
 }
 
