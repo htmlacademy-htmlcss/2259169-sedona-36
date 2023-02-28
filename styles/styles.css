@@ -774,7 +774,9 @@ body {
   padding: 0;
   margin: 0;
 }
-
+.filter-item:not(:last-child) {
+  margin: 0 0 16px 0;
+}
 .filter-title {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -785,22 +787,78 @@ body {
   padding: 0;
 }
 
-.control {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  color: #ffffff;
-  padding: 0 auto;
-  margin: 0 0 16px 0;
+.control{
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Не работает аутлайн при фокусе на mark */
+
+.control:focus .control-mark {
+  outline: 2px solid #83B3D3;
+}
+
+.control:focus .control-label {
+  color: #FFFFFF;
+}
+
+.control:hover .control-mark {
+  background: #FFFFFF60;
+}
+
+.control:hover .control-label {
+  color: #FFFFFF60;
+}
+
+.control:active .control-mark {
+  background: #FFFFFF60;
+}
+
+.control:active .control-label {
+  color: #FFFFFF60;
 }
 
 
-.control-input{
-  margin: 0 16px 19px 0;
-  padding: 0 auto;
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  right: 7px;
+  bottom: 5px;
+  width: 6px;
+  height: 11px;
+  border: solid #3F5E72;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  content: "";
 }
 
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
 
 .filter-group {
   font-size: 18px;
@@ -965,7 +1023,7 @@ body {
   border-radius: 4px;
   border: none;
   padding: 8px 45px;
-  margin: 0 0 32px 0;
+  margin: 56px 0 32px 0;
 }
 
 .apply-button:hover {
