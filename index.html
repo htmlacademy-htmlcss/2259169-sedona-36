@@ -194,6 +194,41 @@
             </a>
           </section>
       </footer>
+      <div class="modal-container">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+              <div class="field-group">
+                <label class="checkin field-title" for="check-in-date">Дата заезда:</label>
+                <input class="check-in-form-field field" type="text" id="check-in-date" name="check-in-date">
+                <p class="error-message">Мы не можем отправить вас в прошлое.</p>
+              </div>
+              <div class="field-group">
+                <label class="check-out field-title" for="check-out-date">Дата выезда:</label>
+                <input class="check-out-form-field field" type="text" id="check-out-date" name="check-out-date">
+                <p class="vacant-message">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
+              <div class="field-group">
+                  <label class="adults-group field-title" for="number-adults">Взрослые:</label>
+                  <input class="adults-count" type="number" id="number-adults" name="number-adults" min="1" max="30" step="1" aria-hidden="Количество взлослых">
+                  <label class="kids-group field-title" for="number-kids">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+
+                    </button>
+                  </span>
+                  <input class="number-count" type="number" id="number-kids" name="number-kids" min="1" max="30" step="1" aria-hidden="Количество детей">
+              </div>
+              <button class="search-modal" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
+
   </body>
 
 </html>
