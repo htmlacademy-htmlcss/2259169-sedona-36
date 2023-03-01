@@ -202,27 +202,33 @@
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
-              <div class="field-group">
+              <div class="field-group date-field">
                 <label class="checkin field-title" for="check-in-date">Дата заезда:</label>
-                <input class="check-in-form-field field" type="text" id="check-in-date" name="check-in-date">
-                <p class="error-message">Мы не можем отправить вас в прошлое.</p>
+                <input class="check-in-form input-field" type="text" id="check-in-date" name="check-in-date" placeholder="Укажите дату">
               </div>
-              <div class="field-group">
+              <p class="error-message">Мы не можем отправить вас в прошлое.</p>
+              <div class="field-group date-field">
                 <label class="check-out field-title" for="check-out-date">Дата выезда:</label>
-                <input class="check-out-form-field field" type="text" id="check-out-date" name="check-out-date">
-                <p class="vacant-message">На эти даты есть свободные номера. Пока есть.</p>
+                <input class="check-out-form input-field" type="text" id="check-out-date" name="check-out-date" placeholder="Укажите дату">
               </div>
-              <div class="field-group">
+              <p class="vacant-message">На эти даты есть свободные номера. Пока есть.</p>
+              <div class="number-people-field">
                   <label class="adults-group field-title" for="number-adults">Взрослые:</label>
-                  <input class="adults-count" type="number" id="number-adults" name="number-adults" min="1" max="30" step="1" aria-hidden="Количество взлослых">
+                  <span class="minus minus-adults"></span>
+                  <input class="adults-count input-plus-minus" type="text" id="number-adults" name="number-adults" value="2" aria-hidden="Количество взлослых">
+	                <span class="plus"></span>
                   <label class="kids-group field-title" for="number-kids">Дети:</label>
-                  <span class="tooltip">
-                    <button class="tooltip-toggle" type="button">
-
-                    </button>
-                  </span>
-                  <input class="number-count" type="number" id="number-kids" name="number-kids" min="1" max="30" step="1" aria-hidden="Количество детей">
+                  <span class="minus minus-kids"></span>
+                  <input class="kids-count input-plus-minus" type="text" id="number-kids" name="number-kids" value="2" aria-hidden="Количество детей">
+                  <span class="plus"></span>
               </div>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-kids-note">
+                  <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 20 20"><path fill="#fff" fill-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z" clip-rule="evenodd"/></svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-kids-note">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
               <button class="search-modal" type="submit">Найти</button>
             </form>
           </section>
