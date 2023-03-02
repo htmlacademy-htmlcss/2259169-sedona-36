@@ -697,10 +697,11 @@ body {
   background-color:#F2F2F280;
 }
 
+/*
 .modal-container-close {
   display: none;
-
 }
+*/
 
 .modal{
   position: relative;
@@ -728,8 +729,6 @@ body {
   cursor: pointer;
 }
 
-
-
 .modal-close-button:hover {
   background-color:#E6E6E6 ;
 }
@@ -745,7 +744,6 @@ body {
 .modal-close-button:active path{
   fill: #00000030;
 }
-
 
 .field-title {
   font-size: 20px;
@@ -827,7 +825,6 @@ body {
   padding: 17px 13px;
 }
 
-
 .minus {
   align-items: center;
   width: 40px;
@@ -882,12 +879,14 @@ body {
   background-color: #E6E6E6;
 
 }
+
 .input-plus-minus:focus {
   background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
   outline-offset: -3px;
 
 }
+
 .input-plus-minus:active {
   outline: 2px solid #000000;
 }
@@ -937,7 +936,6 @@ body {
   padding: 0 89px 0 157px;
   margin: 4px 0 23px 0;
 }
-
 
 .search-modal {
   font-family: "PT Sans", sans-serif;
