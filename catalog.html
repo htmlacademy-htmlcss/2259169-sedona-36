@@ -125,16 +125,25 @@
               <fieldset class="filter-group filter-price">
                 <legend class="filter-title">Стоимость, ₽:</legend>
                 <div class="filter-title-range">
-                  <input type="number" name="min-price" class="min-price-field" placeholder="от">
-                  <input type="number" name="max-price" class="max-price-field" placeholder="до">
+
+                  <label class="from price-form-label" for="min-price">
+                  <input type="number" id="min-price" class="min-price-field" value="0">
+                  <span class="from-text">от</span>
+                  </label>
+
+                  <label class="before price-form-label" for="max-price">
+                  <input type="number" id="max-price" class="max-price-field" value="9000">
+                  <span class="before-text">до</span>
+                  </label>
+
                 </div>
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>

@@ -124,7 +124,7 @@ body {
   margin-left: auto;
   min-width: 64px;
 }
-/* Нужно будет выставить падинги у ссылок поиска и избранного */
+
 .search-user {
   background-image: url(/images/header/header-search-icon.svg);
   background-position: center;
@@ -134,10 +134,13 @@ body {
   align-items: center;
 }
 
+
+
 .navigation-link-user {
   display: block;
   padding: 32px 13px;
 }
+
 
 .favorites-user {
   position: relative;
@@ -697,11 +700,9 @@ body {
   background-color:#F2F2F280;
 }
 
-/*
 .modal-container-close {
   display: none;
 }
-*/
 
 .modal{
   position: relative;
@@ -1230,9 +1231,35 @@ body {
   display: flex;
 }
 
-.min-price-field {
+.price-form-label{
+  position: relative;
+}
+
+.from-text {
+  position: absolute;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #00000030;
+  top: 12px;
+  right: 20px;
+}
+
+.before-text {
+  position: absolute;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #00000030;
+  top: 12px;
+  right: 20px;
+}
+
+.min-price-field {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   width: 143px;
@@ -1242,6 +1269,7 @@ body {
   margin: 0 2px 0 0;
   border-radius: 4px 0 0 4px;
   outline: none;
+  padding: 0 30px 0 20px;
 }
 
 .min-price-field::placeholder {
@@ -1264,7 +1292,7 @@ body {
 
 .max-price-field {
   font-family: "PT Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   width: 143px;
@@ -1273,6 +1301,7 @@ body {
   border: none;
   border-radius: 0 4px 4px 0;
   outline: none;
+  padding-left: 20px;
 }
 
 .max-price-field::placeholder {
