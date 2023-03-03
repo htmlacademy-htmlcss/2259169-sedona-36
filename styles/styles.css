@@ -700,9 +700,11 @@ body {
   background-color:#F2F2F280;
 }
 
+/*
 .modal-container-close {
   display: none;
 }
+*/
 
 .modal{
   position: relative;
@@ -754,10 +756,7 @@ body {
   margin: 12px 0 12px 0;
 }
 
-.field-group {
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .message-container {
   padding: 0 20px;
@@ -789,6 +788,12 @@ body {
   padding-left: 20px;
 }
 
+.field-group-wrapper{
+  display: flex;
+  justify-content: space-between ;
+}
+
+
 .input-field:hover {
   background-color: #E6E6E6;
 
@@ -802,6 +807,8 @@ body {
   outline: 2px solid #000000;
 
 }
+
+
 
 .input-plus-minus {
   font-family: "PT Sans", sans-serif;
@@ -817,25 +824,31 @@ body {
 }
 
 .plus {
-  width: 40px;
-  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
   background-color: #F2F2F2;
   border: none;
   cursor: pointer;
-  border-radius: 0 4px 4px 0;
-  padding: 17px 13px;
+  border-radius: 4px;
+  margin: 14px 10px;
+  padding: 0;
 }
 
 .minus {
+  justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 48px;
+  width: 20px;
+  height: 20px;
   background-color: #F2F2F2;
   border: none;
   cursor: pointer;
-  border-radius:  4px 0 0 4px;
-  padding: 14px 10px;
+  border-radius: 4px;
   outline: none;
+  margin: 14px 10px;
+  padding: 0;
 }
 
 .minus:hover path{
@@ -859,12 +872,10 @@ body {
 }
 
 .minus:focus {
-  outline-offset: -14px;
   outline: 3px solid #68A2CA;
 }
 
 .plus:focus {
-  outline-offset: -14px;
   outline: 3px solid #68A2CA;
 }
 
@@ -883,7 +894,6 @@ body {
 
 .input-plus-minus:focus {
   background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
   outline-offset: -3px;
 
 }
@@ -892,18 +902,30 @@ body {
   outline: 2px solid #000000;
 }
 
-.minus-adults {
-  margin: 0 0 0 42px;
-}
-
-.minus-kids {
-  margin: 0 0 0 82px;
-}
 
 .number-people-field {
   display: flex;
   align-items: center;
   margin: 0 0 48px 0;
+}
+
+.number-people-field-wrapper{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+.number-of-adults {
+  margin-left: 46px;
+}
+
+.number-of-kids {
+  margin-left: 82px;
+
 }
 
 .kids-group {
@@ -1004,7 +1026,7 @@ body {
   border-radius: 10px;
   margin: 15px 0 0 0;
   top: 100%;
-  transform: translateX(-44%);
+  left: -113px;
   display: none;
   z-index: 1;
   filter: drop-shadow(0 25px 50px #00000015);
