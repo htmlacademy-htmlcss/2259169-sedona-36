@@ -1064,7 +1064,7 @@ body {
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
-  margin: 8px 0 0 0;
+  margin: 8px 0 40px 0;
   list-style: none;
   padding: 0;
   min-width: 114px;
@@ -1129,7 +1129,7 @@ body {
 }
 
 .filter-form {
-  margin: 40px 70px 0 0;
+  margin:0 70px 0 0;
   display: flex;
   flex-wrap: no-wrap;
   justify-content: space-between;
@@ -1241,13 +1241,13 @@ body {
 .filter-infrastructure {
   width: 150px;
   padding: 0;
-  margin: 40px 70px 0 0;
+  margin: 0 70px 0 0;
 }
 
 .filter-type {
   width: 190px;
   padding: 0;
-  margin-top: 40px;
+  margin:0;
 }
 
 .filter-title-range {
@@ -1396,7 +1396,7 @@ body {
 .filter-price {
   width: 290px;
   padding: 0 auto;
-  margin-top: 40px;
+  margin: 0;
   margin-right: auto;
   margin-left: 136px;
 }
@@ -1404,10 +1404,9 @@ body {
 .price-form {
   width: 191px;
   padding: 0;
-  margin-top: 40px;
+  margin:0;
   margin-right: auto;
   margin-left: 70px;
-  margin-bottom: 36px;
 }
 
 .apply-button {
