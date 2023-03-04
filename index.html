@@ -92,7 +92,8 @@
               <div class="advantages-item advantage-devil">
                 <h3 class="wrapper-title">Там есть <br> мост дьявола</h3>
                 <p class="advantages-description wrapper-description">Да, по нему можно пройти! <br> Если вы осмелитесь,
-                  <br> разумеется</p>
+                  <br> разумеется
+                </p>
               </div>
               <img class="canyon" src="/images/advantages/advantages-2.jpg" alt="Вид в горах на Каньон" width="800"
                 height="385">
@@ -149,7 +150,7 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
             <li class="social-item-vk">
-              <a class="footer-social-link social-vk" href="#">
+              <a class="footer-social-link social-vk" href="https://vk.com/htmlacademy">
                 <svg class="social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="25" height="14" fill="none" viewBox="0 0 25 14">
                   <path fill="#83B3D3" fill-rule="evenodd"
@@ -161,7 +162,7 @@
               </a>
             </li>
             <li class="social-item-tg">
-              <a class="footer-social-link social-tg" href="#">
+              <a class="footer-social-link social-tg" href="tg://resolve?domain=htmlacademy">
                 <svg class="social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="19" height="16" fill="none" viewBox="0 0 19 16">
                   <path fill="#83B3D3"
@@ -171,7 +172,7 @@
               </a>
             </li>
             <li class="social-item-youtube">
-              <a class="footer-social-link social-youtube" href="#">
+              <a class="footer-social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <svg class="social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="23" height="18" fill="none" viewBox="0 0 23 18">
                   <path fill="#83B3D3"
@@ -194,6 +195,87 @@
             </a>
           </section>
       </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17 4.29231L15.7077 3L10 8.70769L4.29231 3L3 4.29231L8.70769 10L3 15.7077L4.29231 17L10 11.2923L15.7077 17L17 15.7077L11.2923 10L17 4.29231Z"
+                fill="black" />
+            </svg>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+              <div class="field-group">
+                <div class="field-group-wrapper">
+                  <label class="check-in field-title" for="check-in-date">Дата заезда:</label>
+                  <input class="check-in-form input-field" type="text" id="check-in-date" name="check-in-date"
+                    placeholder="Укажите дату" value="27 апреля 2020">
+                </div>
+                <p class="error-message">Мы не можем отправить вас в прошлое.</p>
+              </div>
+              <div class="field-group">
+                <div class="field-group-wrapper">
+                  <label class="check-out field-title" for="check-out-date">Дата выезда:</label>
+                  <input class="check-out-form input-field" type="text" id="check-out-date" name="check-out-date"
+                    placeholder="Укажите дату" value="1 сентября 2023">
+                </div>
+                <p class="vacant-message">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
+              <div class="number-people-field">
+                <label class="adults-group field-title" for="number-adults">Взрослые:</label>
+                <p class="number-people-field-wrapper number-of-adults">
+                  <button class="minus minus-adults" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3" />
+                    </svg>
+                  </button>
+                  <input class="adults-count input-plus-minus" type="text" id="number-adults" name="number-adults"
+                    value="2" aria-hidden="Количество взлослых">
+                  <button class="plus" type="button">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                    </svg>
+                  </button>
+                </p>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-kids-note">
+                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      fill="currentColor" viewBox="0 0 20 20">
+                      <path fill="#fff" fill-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-kids-note">Укажите количество детей, которые
+                    будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                </span>
+                <label class="kids-group field-title" for="number-kids">Дети:</label>
+                <p class="number-people-field-wrapper number-of-kids">
+                  <button class="minus minus-kids" type="button">
+                    <span class="input-border">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3" />
+                      </svg>
+                    </span>
+                  </button>
+                  <input class="kids-count input-plus-minus" type="text" id="number-kids" name="number-kids" value="2"
+                    aria-hidden="Количество детей">
+                  <button class="plus" type="button">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                    </svg>
+                  </button>
+                </p>
+              </div>
+              <button class="search-modal" type="submit">Найти</button>
+        </div>
+        </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 
 </html>
