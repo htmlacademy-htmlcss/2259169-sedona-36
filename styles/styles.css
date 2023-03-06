@@ -673,7 +673,7 @@ body {
   align-self: center;
   text-decoration: none;
   color: inherit;
-  margin-right: 39px;
+  margin:0 32px 0 0;
 }
 
 .footer-contact-phone:hover {
@@ -686,6 +686,10 @@ body {
 
 .footer-contact-phone:active {
   color:#75615730;
+}
+
+.footer-logo{
+  margin: 5px 0 0 3px;
 }
 
 /*Модальное окно*/
@@ -1055,7 +1059,7 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
-  margin: 0;
+  margin: 0 0 2px 0;
   padding: 0;
 }
 
@@ -1064,7 +1068,7 @@ body {
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
-  margin: 8px 0 40px 0;
+  margin: 0 0 39px 0;
   list-style: none;
   padding: 0;
   min-width: 114px;
@@ -1124,12 +1128,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px 59px 70px;
   min-height: 412px;
 }
 
 .filter-form {
-  margin:0 70px 0 0;
+  margin:0;
   display: flex;
   flex-wrap:nowrap;
   justify-content: space-between;
@@ -1360,12 +1364,12 @@ input[type="number"]::-webkit-inner-spin-button {
 .range-scale {
   position: relative;
   height: 4px;
-  margin: 48px 0 8px 0;
+  margin: 45px 0 8px 0;
   background-color: #FFFFFF30;
 }
 
 .range-bar {
-  width: 206px;
+  width: 226px;
   position: absolute;
   height: 4px;
   background-color: #ffffff;
@@ -1399,24 +1403,20 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -5px;
 }
 
 
 .filter-price {
   width: 290px;
   padding: 0;
-  margin: 0;
-  margin-right: auto;
-  margin-left: 136px;
+  margin: 0 0 0 100px;
 }
 
 .price-form {
   width: 191px;
   padding: 0;
-  margin:0;
-  margin-right: auto;
-  margin-left: 70px;
+  margin: 0 0 0 70px;
 }
 
 .apply-button {
@@ -1431,7 +1431,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-decoration: none;
   border-radius: 4px;
   border: none;
-  padding: 8px 45px;
+  padding: 8px 50px;
   margin: 56px 0 32px 0;
   cursor: pointer;
 }
@@ -1464,7 +1464,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-decoration: none;
   border-radius: 4px;
   border: none;
-  padding: 8px 50px;
+  padding: 8px 58px;
   margin-right: 0;
   cursor: pointer;
 }
@@ -1742,6 +1742,36 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #FFFFFF30;
 }
 
+.in-favorites {
+  display: block;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #7DB54F;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 18px;
+  margin: 0;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.in-favorites:hover {
+  background-color: #6C9E42;
+}
+
+.in-favorites:focus {
+  background-color: #6C9E42;
+}
+
+.in-favorites:active {
+  background-color: #7DB54F;
+  color: #FFFFFF30;
+}
+
 
 .hotel-rating-star {
   background-image: url(/images/catalog/rating-star.svg);
@@ -1768,15 +1798,21 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Блок Pagination*/
 
 .pagination {
+  min-width: 1060px;
+  min-height: 60px;
+  margin: 0;
+  padding: 40px 70px 60px 70px;
+}
+
+.pagination-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60px, min-content));
   grid-gap: 8px;
   list-style: none;
   text-align: center;
-  min-width: 1060px;
-  min-height: 60px;
+  padding: 0;
   margin: 0;
-  padding: 40px 70px 60px 70px;
+
 }
 
 
