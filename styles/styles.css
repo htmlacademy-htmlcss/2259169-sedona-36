@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  height: 100%;
+  min-height: 1200px;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -549,6 +549,8 @@ body {
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 20px;
+  outline-offset: -2px;
+  border-radius: 4px 0  0 4px;
 }
 
 
@@ -1291,6 +1293,15 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
 }
 
 
