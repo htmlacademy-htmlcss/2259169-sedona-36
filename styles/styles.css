@@ -703,10 +703,11 @@ body {
   background-color:#F2F2F280;
 }
 
-
+/*
 .modal-container-close {
   display: none;
 }
+*/
 
 
 
@@ -758,6 +759,7 @@ body {
   font-weight: 700;
   padding: 0;
   margin: 12px 0 12px 0;
+  text-transform: capitalize
 }
 
 
