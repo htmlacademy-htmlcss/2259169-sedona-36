@@ -31,7 +31,6 @@ body {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  box-shadow: 30px 0 50px #F2F2F2;
   color: #000000;
   background-color: #F2F2F2;
 }
@@ -53,6 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  box-shadow: 0 0 15px 0 #00000020;
   margin: 0 auto;
   width: 1200px;
   background-color: #ffffff;
@@ -385,7 +385,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 246px;
-  padding: 65px 320px;
+  padding: 64px 320px;
   margin: 0 auto;
 }
 
@@ -453,7 +453,7 @@ body {
   min-height: 406px;
   display: flex;
   flex-direction: column;
-  padding: 96px 304px;
+  padding: 94px 304px;
   margin: 0;
 }
 
@@ -519,7 +519,7 @@ body {
   flex-wrap: nowrap ;
   min-height: 415px;
   margin: 0 auto;
-  padding:96px 258px 104px 258px ;
+  padding:94px 258px 104px 258px ;
 }
 
 .subscribe-intro {
@@ -1613,7 +1613,7 @@ input[type="number"]::-webkit-inner-spin-button {
   flex-direction: column;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-  padding: 20px;
+  padding: 19px;
   margin: 0 auto;
   min-height: 438px;
   flex-grow: 1;
@@ -1783,6 +1783,8 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
+
+
 .count-rating {
   font-size: 16px;
   line-height: 20px;
@@ -1793,6 +1795,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 4px;
   padding: 9px 22px 8px 23px;
   margin: 0;
+  cursor: default;
 }
 
 /* Блок Pagination*/
@@ -1816,15 +1819,17 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 
-.pagination-next {
+.pagination-next a {
   display: block;
+  padding: 12px 12px;
   font-size: 20px;
   min-width: 60px;
   min-height: 60px;
   line-height: 36px;
   background-color: #ffffff;
   text-decoration: none;
-  padding: 12px 12px;
+  cursor: default;
+
 }
 
 
