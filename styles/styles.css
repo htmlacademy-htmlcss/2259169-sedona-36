@@ -454,17 +454,17 @@ body {
   display: flex;
   flex-direction: column;
   padding: 96px 304px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .search-hotel-title {
   margin: 0 0 20px 0;
-  padding: 0 auto;
+  padding: 0;
 }
 
 .search-hotel-description {
   margin: 0 0 54px 0;
-  padding: 0 auto;
+  padding: 0;
 }
 
 .search-button {
@@ -547,7 +547,6 @@ body {
   background-color: #F2F2F2;
   border: none;
   padding-top: 14px;
-  padding-right: auto;
   padding-bottom: 14px;
   padding-left: 20px;
 }
@@ -559,7 +558,7 @@ body {
   height: 52px;
   font-size: 18px;
   line-height: 24px;
-  padding: 0 auto;
+  padding: 0;
   margin: 0 auto;
 }
 
@@ -1131,7 +1130,7 @@ body {
 .filter-form {
   margin:0 70px 0 0;
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap:nowrap;
   justify-content: space-between;
 }
 
@@ -1395,7 +1394,7 @@ body {
 
 .filter-price {
   width: 290px;
-  padding: 0 auto;
+  padding: 0;
   margin: 0;
   margin-right: auto;
   margin-left: 136px;
