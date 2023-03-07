@@ -702,11 +702,11 @@ body {
   height: 100%;
   background-color:#F2F2F280;
 }
-/*
+
 .modal-container-close {
   display: none;
 }
-*/
+
 
 .modal{
   position: relative;
@@ -1323,13 +1323,11 @@ body {
 
 .min-price-field:focus {
   outline: 3px solid #83B3D3;
-  outline-offset: -3px;
   background-color: #E6E6E6;
 }
 
 .min-price-field:active {
   outline: 3px solid #000000;
-  outline-offset: -3px;
   background-color: #F2F2F2;
 }
 
@@ -1358,13 +1356,11 @@ body {
 
 .max-price-field:focus {
   outline: 3px solid #83B3D3;
-  outline-offset: -3px;
   background-color: #E6E6E6;
 }
 
 .max-price-field:active {
   outline: 3px solid #000000;
-  outline-offset: -3px;
   background-color: #F2F2F2;
 }
 
