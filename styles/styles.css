@@ -302,6 +302,17 @@ body {
   color: #ffffff;
 }
 
+.city {
+  object-fit: cover;
+  height: 100%;
+}
+
+.canyon {
+  object-fit: cover;
+  height: 100%;
+}
+
+
 .advantages-list {
   display: flex;
   justify-content: space-between;
