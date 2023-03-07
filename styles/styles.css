@@ -443,13 +443,13 @@ body {
   background-color: #83B3D312;
   background-image: url(/images/advantages/advantages-house.svg);
   background-repeat: no-repeat;
-  background-position: bottom 232px right 162px;
+  background-position: top 81px right 162px;
 
 }
 .service-2 {
   background-image: url(/images/advantages/advantages-icon-food.svg);
   background-repeat: no-repeat;
-  background-position: bottom 232px right 162px;
+  background-position: top 82px right 162px;
 
 }
 
@@ -457,7 +457,7 @@ body {
   background-color: #83B3D312;
   background-image: url(/images/advantages/advantages-icon-gifts.svg);
   background-repeat: no-repeat;
-  background-position: bottom 230px right 168px;
+  background-position: top 79px right 168px;
 }
 
 /* Блок Search-hotel*/
