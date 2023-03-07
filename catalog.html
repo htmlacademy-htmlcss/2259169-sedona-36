@@ -10,8 +10,6 @@
 
   <body>
     <div class="page-container">
-
-      <body>
         <!--Header-->
         <header class="page-header">
           <nav class="navigation">
@@ -148,6 +146,7 @@
                       </button>
                     </div>
                   </div>
+                </div>
 
               </fieldset>
               <fieldset class="filter-group price-form">
@@ -187,6 +186,10 @@
                 <div class="rating-row">
                   <div class="hotel-rating-star">
                     <span class="visually-hidden">четырехзвездочный отель</span>
+                    <span class="rating-star"></span>
+                    <span class="rating-star"></span>
+                    <span class="rating-star"></span>
+                    <span class="rating-star"></span>
                   </div>
                   <p class="count-rating">Рейтинг: 8,5</p>
                 </div>
@@ -201,11 +204,15 @@
                 </div>
                 <div class="button-row">
                   <a class="more-information" href="#">подробнее</a>
-                  <button class="add-favorites" type="button">в избранное</button>
+                  <button class="in-favorites" type="button">в избранном</button>
                 </div>
                 <div class="rating-row">
                   <div class="hotel-rating-star">
                     <span class="visually-hidden">четырехзвездочный отель</span>
+                    <span class="rating-star"></span>
+                    <span class="rating-star"></span>
+                    <span class="rating-star"></span>
+                    <span class="rating-star"></span>
                   </div>
                   <p class="count-rating">Рейтинг: 9,2</p>
                 </div>
@@ -225,6 +232,9 @@
                 <div class="rating-row">
                   <div class="hotel-rating-star">
                     <span class="visually-hidden">трехзвездочный отель</span>
+                    <span class="rating-star"></span>
+                    <span class="rating-star"></span>
+                    <span class="rating-star"></span>
                   </div>
                   <p class="count-rating">Рейтинг: 6,9</p>
                 </div>
@@ -244,33 +254,37 @@
                 <div class="rating-row">
                   <div class="hotel-rating-star">
                     <span class="visually-hidden">двухзвездочный отель</span>
+                    <span class="rating-star"></span>
+                    <span class="rating-star"></span>
                   </div>
                   <p class="count-rating">Рейтинг: 5,0</p>
                 </div>
               </li>
             </ul>
-            <!--Pagination-->
           </section>
-          <ul class="pagination">
-            <li class="pagination-item>">
-              <a class="pagination-link pagination-current">1<span class="visually-hidden">Текущая страница
-                  страница</span></a>
-            </li>
-            <li class="pagination-item>">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item>">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item>">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item pagination-next>">
-              <a class="pagination-next" href="#">...<span class="visually-hidden">Следующая страница</span></a>
-            <li class="pagination-item>">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-          </ul>
+          <!--Pagination-->
+          <section class="pagination">
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1<span class="visually-hidden">Текущая страница
+                    страница</span></a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item pagination-next">
+                <a class="pagination-next" href="#">...<span class="visually-hidden">Следующая страница</span></a>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+            </ul>
+          </section>
           <!--Subscribe-->
           <section class="inner-subscribe">
             <h2 class="inner-subscribe-intro">Подпишитесь на рассылку</h2>
@@ -278,8 +292,7 @@
               бойскаутское!
             </p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="email" id="email" class="email-field" name="subscribe-email" placeholder="Ваш e-mail"
-                aria-hidden="Введите ваш email">
+              <input type="email" id="email" class="email-field" name="subscribe-email" placeholder="Ваш e-mail">
               <button class="inner subscribe-button" type="submit">Подписаться</button>
             </form>
           </section>
@@ -323,7 +336,7 @@
               </li>
             </ul>
             <a class="footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-            <section class="footer-logo">
+            <div class="footer-logo">
               <a class="html-academy-link" href="https://htmlacademy.ru/">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="115" height="33"
                   fill="none" viewBox="0 0 115 33">
@@ -333,6 +346,8 @@
                 </svg>
                 <span class="visually-hidden">Сделанно с любовью в Html Academy</span>
               </a>
-            </section>
+            </div>
+          </section>
         </footer>
-      </body>
+    </div>
+  </body>
