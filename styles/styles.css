@@ -264,8 +264,8 @@ body {
   min-width: 60px;
   height: 2px;
   background-color:#FFFFFF30;
-  top:86px;
-  left:85px;
+  bottom:-31px;
+  left :85px;
   content: "";
 }
 
@@ -284,7 +284,7 @@ body {
   min-width: 60px;
   height: 2px;
   background-color:#00000030;
-  top:86px;
+  bottom:-32px;
   left:85px;
   content: "";
 }
