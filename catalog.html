@@ -263,7 +263,7 @@
             </ul>
           </section>
           <!--Pagination-->
-          <section class="pagination">
+          <div class="pagination">
             <ul class="pagination-list">
               <li class="pagination-item">
                 <a class="pagination-link pagination-current">1<span class="visually-hidden">Текущая страница
@@ -279,12 +279,12 @@
                 <a class="pagination-link" href="#">4</a>
               </li>
               <li class="pagination-item pagination-next">
-                <a class="pagination-next" href="#">...<span class="visually-hidden">Следующая страница</span></a>
+                <a class="pagination-next" >...<span class="visually-hidden">Следующая страница</span></a>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">10</a>
               </li>
             </ul>
-          </section>
+          </div>
           <!--Subscribe-->
           <section class="inner-subscribe">
             <h2 class="inner-subscribe-intro">Подпишитесь на рассылку</h2>
@@ -292,7 +292,9 @@
               бойскаутское!
             </p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="email"><span class="visually-hidden">Введите ваш email</span>
               <input type="email" id="email" class="email-field" name="subscribe-email" placeholder="Ваш e-mail">
+              </label>
               <button class="inner subscribe-button" type="submit">Подписаться</button>
             </form>
           </section>

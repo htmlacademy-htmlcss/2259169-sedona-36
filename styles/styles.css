@@ -393,6 +393,7 @@ body {
   display: block;
   font-size: 22px;
   line-height:26px;
+  color: #333333;
   text-align: center;
   min-height: 26px ;
   margin: 0;
@@ -604,7 +605,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 45px 70px 35px 70px;
+  padding: 45px 70px 29px 70px;
   margin: 0;
 }
 
@@ -674,7 +675,7 @@ body {
   align-self: center;
   text-decoration: none;
   color: inherit;
-  margin:0 32px 5px 0;
+  margin:0 37px 5px 0;
 }
 
 .footer-contact-phone:hover {
@@ -708,6 +709,8 @@ body {
 .modal-container-close {
   display: none;
 }
+
+
 
 
 
@@ -1288,8 +1291,8 @@ body {
 }
 
 
-
-input[type="number"]::-webkit-outer-spin-button,
+/*Пометка!*/
+.page-container input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
@@ -1318,7 +1321,7 @@ input[type="number"]:focus {
   margin: 0 2px 0 0;
   border-radius: 4px 0 0 4px;
   outline: none;
-  padding: 0 30px 0 20px;
+  padding: 12px 30px 12px 20px;
 }
 
 .min-price-field::placeholder {
@@ -1330,12 +1333,14 @@ input[type="number"]:focus {
 }
 
 .min-price-field:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
   background-color: #E6E6E6;
 }
 
 .min-price-field:active {
-  border: 3px solid #000000;
+  outline: 3px solid #000000;
+  outline-offset: -3px;
   background-color: #F2F2F2;
 }
 
@@ -1350,7 +1355,7 @@ input[type="number"]:focus {
   border: none;
   border-radius: 0 4px 4px 0;
   outline: none;
-  padding-left: 20px;
+  padding: 12px 30px 12px 20px;
 }
 
 .max-price-field::placeholder {
@@ -1363,13 +1368,14 @@ input[type="number"]:focus {
 }
 
 .max-price-field:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
   background-color: #E6E6E6;
-  outline: none;
 }
 
 .max-price-field:active {
-  border: 3px solid #000000;
+  outline: 3px solid #000000;
+  outline-offset: -3px;
   background-color: #F2F2F2;
 }
 
@@ -1415,14 +1421,14 @@ input[type="number"]:focus {
 
 .toggle-max {
   top: -8px;
-  right: -5px;
+  right: -3px;
 }
 
 
 .filter-price {
   width: 290px;
   padding: 0;
-  margin: 0 0 0 100px;
+  margin: 0 0 0 102px;
 }
 
 .price-form {
@@ -1805,6 +1811,7 @@ input[type="number"]:focus {
   font-size: 16px;
   line-height: 20px;
   background-color: #F2F2F2;
+  color: #333333;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -1878,6 +1885,7 @@ input[type="number"]:focus {
 .pagination-current {
   font-size: 20px;
   min-width: 60px;
+  color: #000000;
   min-height: 60px;
   line-height: 36px;
   background-color: #F2F2F2;
