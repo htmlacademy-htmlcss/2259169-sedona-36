@@ -480,13 +480,14 @@ body {
   padding: 0;
 }
 
-.search-button {
+.search-link {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
   color: #ffffff;
   margin-bottom: 96px;
+  text-decoration: none;
   align-self: center;
   padding: 8px 50px;
   margin: 0 auto;
@@ -498,21 +499,21 @@ body {
   cursor: pointer;
 }
 
-.search-button:hover {
+.search-link:hover {
   background-color:#615048;
 }
 
-.search-button:focus {
+.search-link:focus {
   background-color:#615048;
 
 }
 
-.search-button:active {
+.search-link:active {
   background-color:#756157;
   color:#FFFFFF30;
 }
 
-.search-button:disabled {
+.search-link:disabled {
   background-color:#E5E5E5;
 }
 
